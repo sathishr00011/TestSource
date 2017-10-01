@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
-    <StartWorkingDirectory>D:\SRTFS\Appstore\Main\Tesco\Com\Web\UI\Grocery\Web\obj\Release\Package\PackageTmp</StartWorkingDirectory>
-  </PropertyGroup>
-</Project>
