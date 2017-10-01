@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ReleaseManifest type="component" region="UK">
+      
+    <Product Name="Notification" InstallType="Install" >      
+        <Service TargetServerType="AppStoreAppServer" Name="Notification" InstallType="Install" AppType="WEBSVC" artifactIdentifier="AppStore.Notification.Service">
+          <Package Name="AppStore.Notification.Contracts" InstallType="Install" Version="0.1.20826.3"/>
+          <Package Name="AppStore.Notification.Library" InstallType="Install" />
+          <Package Name="AppStore.Notification.WcfClient" InstallType="Install" Version="0.1.20827.3"/>
+          <Package Name="AppStore.Notification.WcfHost" InstallType="Install" />          
+          <Package Name="Tesco.Com.Core" InstallType="Install" Version="0.1.20807.1" />
+      <Package Name="AppStore.Common.Library" InstallType="Install" Version="0.1.20807.1" />           
+        </Service>
+	</Product>
+		
+	<Product Name="Location" InstallType="Install" >	
+        <Service TargetServerType="AppStoreAppServer" Name="Location" InstallType="Install" AppType="WEBSVC" artifactIdentifier="AppStore.Location.Service">
+          <Package Name="AppStore.Location.Contracts" InstallType="Install" />
+          <Package Name="AppStore.Location.Library" InstallType="Install" />
+          <Package Name="AppStore.Location.WcfClient" InstallType="Install" />
+          <Package Name="AppStore.Location.WcfHost" InstallType="Install" />          
+          <Package Name="Tesco.Com.Core" InstallType="Install" Version="0.1.20703.2" />
+      <Package Name="AppStore.Common.Library" InstallType="Install" Version="0.1.20903.1" />
+          <Package Name="AppStore.Region.Library" InstallType="Install" Version="0.1.20901.2"/>          
+        </Service>
+	</Product>
+		
+	<Product Name="Content" InstallType="Install" >
+        <Service TargetServerType="AppStoreAppServer" Name="Content" InstallType="Install" AppType="WEBSVC" artifactIdentifier="AppStore.Content.Service">
+          <Package Name="AppStore.Content.Contracts" InstallType="Install" Version="0.1.20827.1"/>
+          <Package Name="AppStore.Content.Library" InstallType="Install" Version="0.1.20919.1" />
+          <Package Name="AppStore.Content.WcfClient" InstallType="Install" Version="0.1.20919.1"/>
+          <Package Name="AppStore.Content.WcfHost" InstallType="Install" Version="0.1.20919.2"/>          
+          <Package Name="Tesco.Com.Core" InstallType="Install" Version="0.1.20703.2" />
+      <Package Name="AppStore.Common.Library" InstallType="Install" Version="0.1.20703.4" />          
+        </Service>		
+	</Product>
+	
+	<Product Name="StoreHouse" InstallType="Install" >	
+        <Service TargetServerType="AppStoreAppServer" Name="StoreHouse" InstallType="Install" AppType="WEBSVC" artifactIdentifier="AppStore.StoreHouse.Service">
+          <Package Name="AppStore.StoreHouse.Contracts" InstallType="Install" Version="0.1.21029.1" />
+          <Package Name="AppStore.StoreHouse.Library" InstallType="Install" />
+          <Package Name="AppStore.StoreHouse.WcfClient" InstallType="Install" Version="0.1.20924.2" />
+          <Package Name="AppStore.StoreHouse.WcfHost" InstallType="Install" />
+           <Package Name="Tesco.Com.Core" InstallType="Install" Version="0.1.20728.2" />
+      <Package Name="AppStore.Common.Library" InstallType="Install" Version="0.1.20728.2" />
+          <Package Name="AppStore.Region.Library" InstallType="Install" Version="0.1.20901.2"/>          
+        </Service>
+	</Product>
+	
+	<Product Name="Customer" InstallType="Install" >
+        <Service TargetServerType="AppStoreAppServer" Name="Customer" InstallType="Install" AppType="WEBSVC" artifactIdentifier="AppStore.Customer.Service">
+          <Package Name="AppStore.Customer.Contracts" InstallType="Install" Version="0.1.21118.4"/>
+          <Package Name="AppStore.Customer.Library" InstallType="Install" />
+          <Package Name="AppStore.Customer.WcfClient" InstallType="Install" Version="0.1.21118.4"/>
+          <Package Name="AppStore.Customer.WcfHost" InstallType="Install" />          
+           <Package Name="Tesco.Com.Core" InstallType="Install" Version="0.1.20703.2" />
+      <Package Name="AppStore.Common.Library" InstallType="Install" Version="0.1.20703.4" />                    
+        </Service>
+	</Product>	
+	
+	<Product Name="Payment" InstallType="Install" >
+        <Service TargetServerType="AppStoreAppServer" Name="Payment" InstallType="Install" AppType="WEBSVC" artifactIdentifier="AppStore.Payment.Service">
+          <Package Name="AppStore.Payment.Contracts" InstallType="Install" />
+          <Package Name="AppStore.Payment.Library" InstallType="Install" />
+          <Package Name="AppStore.Payment.WcfClient" InstallType="Install" />
+          <Package Name="AppStore.Payment.WcfHost" InstallType="Install" />
+          <Package Name="Tesco.Com.Core" InstallType="Install" Version="0.1.20807.1" />
+      <Package Name="AppStore.Common.Library" InstallType="Install" Version="0.1.20807.1" />          
+        </Service>
+	</Product>	
+		
+	<Product Name="Order" InstallType="Install" >	
+        <Service TargetServerType="AppStoreAppServer" Name="Order" InstallType="Install" AppType="WEBSVC" artifactIdentifier="AppStore.Order.Service">
+          <Package Name="AppStore.Order.Contracts" InstallType="Install" />
+          <Package Name="AppStore.Order.Library" InstallType="Install" />
+          <Package Name="AppStore.Order.WcfClient" InstallType="Install" />
+          <Package Name="AppStore.Order.WcfHost" InstallType="Install" />
+          <Package Name="Tesco.Com.Core" InstallType="Install" Version="0.1.20807.1" />
+      <Package Name="AppStore.Common.Library" InstallType="Install" Version="0.1.20827.1" />
+          <Package Name="AppStore.Region.Library" InstallType="Install" Version="0.1.20901.2"/>
+        </Service>
+	</Product>	
+		
+	<Product Name="Delivery" InstallType="Install" >	
+        <Service TargetServerType="AppStoreAppServer" Name="Delivery" InstallType="Install" AppType="WEBSVC" artifactIdentifier="AppStore.Delivery.Service">
+          <Package Name="AppStore.Delivery.Contracts" InstallType="Install" Version="0.1.20925.2"/>
+          <Package Name="AppStore.Delivery.Library" InstallType="Install" />
+          <Package Name="AppStore.Delivery.WcfClient" InstallType="Install" Version="0.1.20925.2"/>
+          <Package Name="AppStore.Delivery.WcfHost" InstallType="Install" />
+           <Package Name="Tesco.Com.Core" InstallType="Install" Version="0.1.20703.2" />
+      <Package Name="AppStore.Common.Library" InstallType="Install" Version="0.1.20703.4" />
+          <Package Name="AppStore.StoreHouse.Contracts" InstallType="Install" Version="0.1.21029.1"/>
+          <Package Name="AppStore.StoreHouse.WcfClient" InstallType="Install" Version="0.1.20924.2"/>
+        </Service>
+	</Product>	
+		
+	<Product Name="ShoppingCart" InstallType="Install" >	
+        <Service TargetServerType="AppStoreAppServer" Name="ShoppingCart" InstallType="Install" AppType="WEBSVC" artifactIdentifier="AppStore.ShoppingCart.Service">
+          <Package Name="AppStore.ShoppingCart.Contracts" InstallType="Install" />
+          <Package Name="AppStore.ShoppingCart.Library" InstallType="Install" />
+          <Package Name="AppStore.ShoppingCart.WcfClient" InstallType="Install" />
+          <Package Name="AppStore.ShoppingCart.WcfHost" InstallType="Install" />
+           <Package Name="Tesco.Com.Core" InstallType="Install" Version="0.1.20807.1" />
+      <Package Name="AppStore.Common.Library" InstallType="Install" Version="0.1.21110.5" />
+          <Package Name="AppStore.QueueProcessor.Contracts" InstallType="Install" />
+          <Package Name="AppStore.QueueProcessor.Library" InstallType="Install" />
+        </Service>
+	</Product>	
+		
+	<Product Name="Loyalty" InstallType="Install" >	
+        <Service TargetServerType="AppStoreAppServer" Name="Loyalty" InstallType="Install" AppType="WEBSVC" artifactIdentifier="AppStore.Loyalty.Service">
+          <Package Name="AppStore.Loyalty.Contracts" InstallType="Install" />
+          <Package Name="AppStore.Loyalty.Library" InstallType="Install" />
+          <Package Name="AppStore.Loyalty.WcfClient" InstallType="Install" />
+          <Package Name="AppStore.Loyalty.WcfHost" InstallType="Install" />
+          <Package Name="Tesco.Com.Core" InstallType="Install" Version="0.1.20703.2" />
+      <Package Name="AppStore.Common.Library" InstallType="Install" Version="0.1.20703.4" />
+        </Service>
+	</Product>	
+		
+	<Product Name="Product" InstallType="Install" >	
+        <Service TargetServerType="AppStoreAppServer" Name="Product" InstallType="Install" AppType="WEBSVC" artifactIdentifier="AppStore.Product.Service">
+          <Package Name="AppStore.Product.Contracts" InstallType="Install" />
+          <Package Name="AppStore.Product.Library" InstallType="Install" />
+          <Package Name="AppStore.Product.WcfClient" InstallType="Install" />
+          <Package Name="AppStore.Product.WcfHost" InstallType="Install" />
+          <Package Name="Tesco.Com.Core" InstallType="Install" Version="0.1.20703.2" />
+      <Package Name="AppStore.Common.Library" InstallType="Install" Version="0.1.20703.4" />
+          <Package Name="AppStore.SmartStore.Contracts" InstallType="Install" />
+          <Package Name="AppStore.SmartStore.Library" InstallType="Install" />
+        </Service>
+	</Product>	
+		
+	<Product Name="Authentication" InstallType="Install" >	
+        <Service TargetServerType="AppStoreAppServer" Name="Authentication" InstallType="Install" AppType="WEBSVC" artifactIdentifier="AppStore.Authentication.Service">
+          <Package Name="AppStore.Authentication.Contracts" InstallType="Install" Version="0.1.21029.3"/>
+          <Package Name="AppStore.Authentication.Library" InstallType="Install" />
+          <Package Name="AppStore.Authentication.WcfClient" InstallType="Install" Version="0.1.21029.4"/>
+          <Package Name="AppStore.Authentication.WcfHost" InstallType="Install" />
+           <Package Name="Tesco.Com.Core" InstallType="Install" Version="0.1.20703.2" />
+      <Package Name="AppStore.Common.Library" InstallType="Install" Version="0.1.20703.4" />
+        </Service>
+	</Product>	
+		
+	<Product Name="Favourite" InstallType="Install" >	
+        <Service TargetServerType="AppStoreAppServer" Name="Favourite" InstallType="Install" AppType="WEBSVC" artifactIdentifier="AppStore.Favourite.Service">
+          <Package Name="AppStore.Favourite.Contracts" InstallType="Install" />
+          <Package Name="AppStore.Favourite.Library" InstallType="Install" />
+          <Package Name="AppStore.Favourite.WcfClient" InstallType="Install" />
+          <Package Name="AppStore.Favourite.WcfHost" InstallType="Install" />
+          <Package Name="Tesco.Com.Core" InstallType="Install" Version="0.1.20703.2" />
+      <Package Name="AppStore.Common.Library" InstallType="Install" Version="0.1.20703.4" />
+        </Service>
+	</Product>	
+		
+	<Product Name="DeviceIdentification" InstallType="Install" >	
+        <Service TargetServerType="AppStoreAppServer" Name="DeviceIdentification" InstallType="Install" AppType="WEBSVC" artifactIdentifier="AppStore.DeviceIdentification.Service">
+          <Package Name="AppStore.DeviceIdentification.Contracts" InstallType="Install" Version="0.1.20825.3"/>
+          <Package Name="AppStore.DeviceIdentification.Library" InstallType="Install" />
+          <Package Name="AppStore.DeviceIdentification.WcfClient" InstallType="Install" Version="0.1.20826.2"/>
+          <Package Name="AppStore.DeviceIdentification.WcfHost" InstallType="Install" />
+          <Package Name="Tesco.Com.Core" InstallType="Install" Version="0.1.20703.2" />
+      <Package Name="AppStore.Common.Library" InstallType="Install" Version="0.1.20703.4" />
+          <Package Name="AppStore.SmartStore.Contracts" InstallType="Install" />
+          <Package Name="AppStore.SmartStore.Library" InstallType="Install" />
+        </Service>
+	</Product>	
+		
+	<Product Name="Order.Business" InstallType="Install" >	
+        <Service TargetServerType="AppStoreAppServer" Name="Order.Business" InstallType="Install" AppType="WEBSVC" artifactIdentifier="AppStore.Business.OrderManager">
+          <Package Name="Business.OrderManager.Contracts" InstallType="Install" />
+          <Package Name="Business.OrderManager.Library" InstallType="Install" />
+          <Package Name="Business.OrderManager.WcfHost" InstallType="Install" />
+          <Package Name="Tesco.Com.Core" InstallType="Install" Version="0.1.20703.2" />
+      <Package Name="AppStore.Common.Library" InstallType="Install" Version="0.1.20703.4" />
+          <Package Name="AppStore.Delivery.Contracts" InstallType="Install" Version="0.1.20925.2"/>
+          <Package Name="AppStore.Delivery.WcfClient" InstallType="Install" Version="0.1.20925.2"/>
+          <Package Name="AppStore.Order.Contracts" InstallType="Install" />
+          <Package Name="AppStore.Order.WcfClient" InstallType="Install" />
+          <Package Name="AppStore.Coupon.Contracts" InstallType="Install" />
+          <Package Name="AppStore.Coupon.WcfClient" InstallType="Install" />
+          <Package Name="AppStore.Customer.Contracts" InstallType="Install" Version="0.1.20901.2"/>
+          <Package Name="AppStore.Customer.WcfClient" InstallType="Install" Version="0.1.20919.1"/>
+        </Service>
+	</Product>	
+		
+	<Product Name="Coupon" InstallType="Install" >	
+        <Service TargetServerType="AppStoreAppServer" Name="Coupon" InstallType="Install" AppType="WEBSVC" artifactIdentifier="AppStore.Coupon.Service">
+          <Package Name="AppStore.Coupon.Contracts" InstallType="Install" />
+          <Package Name="AppStore.Coupon.Library" InstallType="Install" />
+          <Package Name="AppStore.Coupon.WcfClient" InstallType="Install" />
+          <Package Name="AppStore.Coupon.WcfHost" InstallType="Install" />
+           <Package Name="Tesco.Com.Core" InstallType="Install" Version="0.1.20807.1" />
+      <Package Name="AppStore.Common.Library" InstallType="Install" Version="0.1.20807.1" />
+          <Package Name="AppStore.Customer.Contracts" InstallType="Install" Version="0.1.20901.2"/>
+          <Package Name="AppStore.Customer.WcfClient" InstallType="Install" Version="0.1.20919.1"/>
+        </Service>
+    </Product>
+
+  <Product Name="EntprseAuthentication" InstallType="Install" >
+    <Service TargetServerType="AppStoreAppServer" Name="Authentication" InstallType="Install" AppType="WEBSVC"  artifactIdentifier="Enterprise.Authentication.Service">
+      <Package Name="Enterprise.Authentication.Contracts" InstallType="Install" />
+      <Package Name="Enterprise.Authentication.Library" InstallType="Install" />
+      <Package Name="Enterprise.Authentication.WcfClient" InstallType="Install" />
+      <Package Name="Enterprise.Authentication.WcfHost" InstallType="Install" />
+      <Package Name="Tesco.Com.Core" InstallType="Install" Version="0.1.20703.2" />
+      <Package Name="AppStore.Common.Library" InstallType="Install" Version="0.1.20703.4" />
+    </Service>
+  </Product>
+
+  <Product Name="Price" InstallType="Install" >
+    <Service TargetServerType="AppStoreAppServer" Name="Price" InstallType="Install" AppType="WEBSVC" artifactIdentifier="AppStore.Price.Service">
+      <Package Name="AppStore.Price.Contracts" InstallType="Install" />
+      <Package Name="AppStore.Price.Library" InstallType="Install" />
+      <Package Name="AppStore.Price.WcfClient" InstallType="Install" />
+      <Package Name="AppStore.Price.WcfHost" InstallType="Install" />
+      <Package Name="AppStore.Product.CommonEntities" InstallType="Install" />
+       <Package Name="Tesco.Com.Core" InstallType="Install" Version="0.1.20728.2" />
+      <Package Name="AppStore.Common.Library" InstallType="Install" Version="0.1.20728.2" />
+      <Package Name="AppStore.Region.Library" InstallType="Install" Version="0.1.20901.2"/>      
+    </Service>
+  </Product>
+
+  <Product Name="GroceryProduct" InstallType="Install" >
+    <Service TargetServerType="AppStoreAppServer" Name="GroceryProduct" InstallType="Install" AppType="WEBSVC" artifactIdentifier="AppStore.GroceryProduct.Service">
+      <Package Name="AppStore.GroceryProduct.Contracts" InstallType="Install" />
+      <Package Name="AppStore.GroceryProduct.Library" InstallType="Install" />
+      <Package Name="AppStore.GroceryProduct.WcfClient" InstallType="Install" />
+      <Package Name="AppStore.GroceryProduct.WcfHost" InstallType="Install" />
+      <Package Name="AppStore.CoreProduct.Contracts" InstallType="Install" />
+      <Package Name="AppStore.CoreProduct.WcfClient" InstallType="Install" />
+      <Package Name="AppStore.Price.Contracts" InstallType="Install" />
+      <Package Name="AppStore.Price.WcfClient" InstallType="Install" />
+       <Package Name="Tesco.Com.Core" InstallType="Install" Version="0.1.20728.2" />
+      <Package Name="AppStore.Common.Library" InstallType="Install" Version="0.1.20728.2" />      
+    </Service>
+  </Product>
+
+  <Product Name="CoreProduct" InstallType="Install" >
+    <Service TargetServerType="AppStoreAppServer" Name="CoreProduct" InstallType="Install" AppType="WEBSVC" artifactIdentifier="AppStore.CoreProduct.Service">
+      <Package Name="AppStore.CoreProduct.Contracts" InstallType="Install" />
+      <Package Name="AppStore.CoreProduct.Library" InstallType="Install" />
+      <Package Name="AppStore.CoreProduct.WcfClient" InstallType="Install" />
+      <Package Name="AppStore.CoreProduct.WcfHost" InstallType="Install" />
+      <Package Name="Tesco.Com.Core" InstallType="Install" Version="0.1.20728.2" />
+      <Package Name="AppStore.Common.Library" InstallType="Install" Version="0.1.20728.2" />
+      <Package Name="AppStore.SmartStore.Contracts" InstallType="Install" />
+      <Package Name="AppStore.SmartStore.Library" InstallType="Install" />
+    </Service>
+  </Product>
+      
+</ReleaseManifest>

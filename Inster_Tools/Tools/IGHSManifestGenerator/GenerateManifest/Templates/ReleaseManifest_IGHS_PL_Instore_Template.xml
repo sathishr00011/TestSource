@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReleaseManifest ReleaseVersion="" Region="PL">
+  <Applications>
+    <!-- possible values of InstallType are Install, Uninstall, None-->
+    <Product Name="PCS" Version="3.0">
+      <Services>
+        <Service Type="WCF" TargetServerType="PCSApplicationServer" InstallType="Install">
+          <Component Name="GHS_PCS_config" MSIDeployFolderName="GHS_PCS_Config" />
+          <Component Name="GHS_PCS_CoreEventManager" MSIDeployFolderName="GHS_PCS_CoreEventManager" />
+          <Component Name="GHS_PCS_OrderBroker" MSIDeployFolderName="GHS_PCS_OrderBroker" />
+          <Component Name="GHS_Adapter" MSIDeployFolderName="GHS_Adapter" />
+          <Component Name="GHS_PCS_UserManagement" MSIDeployFolderName="GHS_PCS_UserManagement" />
+          <Component Name="GHS_LabelService" MSIDeployFolderName="GHS_LabelService" />
+          <Component Name="GHS_PCS_CoreDataAccess" MSIDeployFolderName="GHS_PCS_CoreDataAccess" />
+          <Component Name="GHS_PCS_Core" MSIDeployFolderName="GHS_PCS_Core" />
+          <Component Name="GHS_E2EService" MSIDeployFolderName="GHS_E2EService" />
+        </Service>
+        <Service Type="DeliveryScheduler" TargetServerType="PCSApplicationServer" InstallType="Install">
+          <Component Name="GHS_DeliveryScheduler" MSIDeployFolderName="GHS_DeliveryScheduler" />
+        </Service>
+        <Service Type="WebApp" TargetServerType="PCSApplicationServer" InstallType="Install">
+          <Component Name="PCSAdmin" MSIDeployFolderName="PCSAdmin" />
+        </Service>
+        <Service Type="Windows" TargetServerType="PCSApplicationServer" InstallType="Install">
+          <Component Name="GHS_PCS_PrintingService" ServiceExe="Tesco.Instore.Printing.PrintingService.exe" />
+          <Component Name="GHS_PCS_Scheduler" ServiceExe="Tesco.Instore.PCS.Scheduler.Service.exe" />
+          <Component Name="GHS_PCS_Filewatcher" ServiceExe="Tesco.Instore.PCS.PSFileWatcher.exe" />
+        </Service>
+        <Service Type="LabelPrinter" TargetServerType="PCSApplicationServer" InstallType="Install">
+          <Component Name="PCSEpsonLabelPrinter" MSIDeployFolderName="GHS_PCS_PrintingService" />
+        </Service>
+        <Service Type="Teampad" TargetServerType="PCSApplicationServer" InstallType="Install">
+          <Component Name="Teampad" />
+        </Service>
+      </Services>
+    </Product>
+  </Applications>
+</ReleaseManifest>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ReleaseManifest ReleaseVersion="" Region="UK">
+ <Product Name="Delivery" InstallType="Install" >
+    <Package Name="Tesco.Com.Web.UI.Grocery.Delivery" InstallType="Install" />
+    <Package Name="AppStore.Delivery.Contracts" InstallType="Install" Version="0.1.20925.2"/>
+    <Package Name="AppStore.Delivery.WcfClient" InstallType="Install" Version="0.1.20925.2"/>
+    <Package Name="Tesco.Com.WebAPIClient.TescoLocationAPIClient" InstallType="Install" Version="0.1.20925.5"/>
+    <Package Name="Appstore.DeliveryAdapter" InstallType="Install" />
+    <Package Name="Tesco.Com.AppStore.StoreAdpater" InstallType="Install" Version="0.1.21111.1" />
+    <Package Name="Tesco.Com.WebAPIClient.TransportAPIClient" InstallType="Install" />
+    <Package Name="AppStore.Grocery.Business.Delivery" InstallType="Install" />
+  </Product>
+</ReleaseManifest>

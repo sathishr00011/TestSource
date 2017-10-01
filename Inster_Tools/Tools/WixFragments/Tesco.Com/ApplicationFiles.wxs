@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?include Guids.wxi ?>
+
+	<!-- The name of this fragment -->
+	<Fragment Id ="AppFiles">
+
+
+		<!-- The directory reference of your main project -->
+		<DirectoryRef Id="ApplicationDirectory">
+
+			<!-- Files from the project root, going to the base of the application directory -->
+			<Component Id="BaseFiles" Guid="$(var.ApplicationFilesGuid)" DiskId="1" KeyPath="yes">
+				<!-- Files for the application root in here -->
+
+			</Component>
+	
+			<!-- Files going to a sub directory -->
+			<Directory Id ="BinDirectory"  Name="Bin">
+				<Component Id="BinFiles" Guid="$(var.BinFilesGuid)" DiskId="1" KeyPath="yes">
+					<!-- Files for the Bin Folder in here -->
+				</Component>
+			</Directory>
+		</DirectoryRef>
+		
+		<ComponentGroup Id="ApplicationFiles">
+			<ComponentRef Id="BaseFiles" />
+			<ComponentRef Id="BinFiles" />
+		</ComponentGroup>
+
+	</Fragment>
+</Wix>

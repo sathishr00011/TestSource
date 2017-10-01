@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WixFragmentGenerator", "WixFragmentGenerator\WixFragmentGenerator.csproj", "{01BFADE8-C94A-470C-8AB7-C930646039B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WixFragmentGenerator.Test", "WixFragmentGenerator.Test\WixFragmentGenerator.Test.csproj", "{EEE1ACF9-0FA3-4C4B-814F-65C354EAB584}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{456C2317-3F89-4673-88E8-2EC144BAC5D6}"
+	ProjectSection(SolutionItems) = preProject
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+		WixFragmentGenerator.vsmdi = WixFragmentGenerator.vsmdi
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://tfsapp.dotcom.tesco.org/tfs/grocery
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = WixFragmentGenerator\\WixFragmentGenerator.csproj
+		SccProjectName1 = WixFragmentGenerator
+		SccLocalPath1 = WixFragmentGenerator
+		SccProjectUniqueName2 = WixFragmentGenerator.Test\\WixFragmentGenerator.Test.csproj
+		SccProjectName2 = WixFragmentGenerator.Test
+		SccLocalPath2 = WixFragmentGenerator.Test
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = WixFragmentGenerator.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01BFADE8-C94A-470C-8AB7-C930646039B6}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{01BFADE8-C94A-470C-8AB7-C930646039B6}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{01BFADE8-C94A-470C-8AB7-C930646039B6}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{01BFADE8-C94A-470C-8AB7-C930646039B6}.Debug|x86.ActiveCfg = Debug|x86
+		{01BFADE8-C94A-470C-8AB7-C930646039B6}.Debug|x86.Build.0 = Debug|x86
+		{01BFADE8-C94A-470C-8AB7-C930646039B6}.Release|Any CPU.ActiveCfg = Release|x86
+		{01BFADE8-C94A-470C-8AB7-C930646039B6}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{01BFADE8-C94A-470C-8AB7-C930646039B6}.Release|Mixed Platforms.Build.0 = Release|x86
+		{01BFADE8-C94A-470C-8AB7-C930646039B6}.Release|x86.ActiveCfg = Release|x86
+		{01BFADE8-C94A-470C-8AB7-C930646039B6}.Release|x86.Build.0 = Release|x86
+		{EEE1ACF9-0FA3-4C4B-814F-65C354EAB584}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEE1ACF9-0FA3-4C4B-814F-65C354EAB584}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEE1ACF9-0FA3-4C4B-814F-65C354EAB584}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{EEE1ACF9-0FA3-4C4B-814F-65C354EAB584}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{EEE1ACF9-0FA3-4C4B-814F-65C354EAB584}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EEE1ACF9-0FA3-4C4B-814F-65C354EAB584}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEE1ACF9-0FA3-4C4B-814F-65C354EAB584}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEE1ACF9-0FA3-4C4B-814F-65C354EAB584}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{EEE1ACF9-0FA3-4C4B-814F-65C354EAB584}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{EEE1ACF9-0FA3-4C4B-814F-65C354EAB584}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

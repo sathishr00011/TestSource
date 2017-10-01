@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{820C9F99-1774-4574-A503-E4ACA409F277}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Manifest.Xml</RootNamespace>
+    <AssemblyName>Manifest.Xml</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppStoreXmlGeneration.cs" />
+    <Compile Include="AuthenticationServiceXmlGeneration.cs" />
+    <Compile Include="BackOfficeXmlGeneration.cs" />
+    <Compile Include="BasketBuildingXmlGeneration.cs" />
+    <Compile Include="ContentServiceXmlGeneration.cs" />
+    <Compile Include="CouponServiceXmlGeneration.cs" />
+    <Compile Include="CustomerProfileXmlGeneration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CustomerServiceXmlGeneration.cs" />
+    <Compile Include="DeliveryServiceXmlGeneration.cs" />
+    <Compile Include="DeliveryXmlGeneration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DeviceIdentificationServiceXmlGeneration.cs" />
+    <Compile Include="EntprseAuthenticationServiceXmlGeneration.cs" />
+    <Compile Include="FavouriteServiceXmlGeneration.cs" />
+    <Compile Include="FindProductsXmlGeneration.cs" />
+    <Compile Include="GroceryHostXmlGeneration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HomeXmlGeneration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="InstoreXmlGeneration.cs" />
+    <Compile Include="LocationServiceXmlGeneration.cs" />
+    <Compile Include="LoginUIAssetsXmlGeneration.cs" />
+    <Compile Include="LoginXmlGeneration.cs" />
+    <Compile Include="LoyaltyServiceXmlGeneration.cs" />
+    <Compile Include="MobileDispatcherXmlGeneration.cs" />
+    <Compile Include="MyAccountXmlGeneration.cs" />
+    <Compile Include="NotificationServiceXmlGeneration.cs" />
+    <Compile Include="OMSXmlGeneration.cs" />
+    <Compile Include="OrderBusinessServiceXmlGeneration.cs" />
+    <Compile Include="OrderCheckoutXmlGeneration.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OrderServiceXmlGeneration.cs" />
+    <Compile Include="PaymentServiceXmlGeneration.cs" />
+    <Compile Include="ProductIntegrationXmlGeneration.cs" />
+    <Compile Include="ConsoleAppXmlGeneration.cs" />
+    <Compile Include="ReportingManagementServiceXmlGeneration.cs" />
+    <Compile Include="ReportingWebSiteXmlGeneration.cs" />
+    <Compile Include="ShoppingCartServiceXmlGeneration.cs" />
+    <Compile Include="StoreHouseServiceGeneration.cs" />
+    <Compile Include="TibcoXmlGeneration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UIAssetsXmlGeneration.cs" />
+    <Compile Include="WindowsServiceXmlGeneration.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Manifest.Core\Manifest.Core.csproj">
+      <Project>{91B3E87D-A53E-4624-ACD4-4CBFF9C46AA3}</Project>
+      <Name>Manifest.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

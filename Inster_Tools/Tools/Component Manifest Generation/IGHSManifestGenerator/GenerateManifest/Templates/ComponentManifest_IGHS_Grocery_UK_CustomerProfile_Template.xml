@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ReleaseManifest ReleaseVersion="" Region="UK">
+  <Product Name="CustomerProfile" InstallType="Install" >
+    <Package Name="AppStore.Location.Contracts" InstallType="Install" />
+    <Package Name="AppStore.Location.WcfClient" InstallType="Install" />
+    <Package Name="AppStore.Loyalty.Contracts" InstallType="Install" />
+    <Package Name="AppStore.Loyalty.WcfClient" InstallType="Install" />
+    <Package Name="Tesco.Com.Web.UI.Grocery.MyAccount" InstallType="Install" />
+    <Package Name="AppStore.Customer.Contracts" InstallType="Install" Version="0.1.21118.4" />
+    <Package Name="AppStore.Customer.WcfClient" InstallType="Install" Version="0.1.21118.4"/>
+    <Package Name="AppStore.Grocery.Business.Customer" InstallType="Install" />
+    <Package Name="AppStore.Region.Library" InstallType="Install" Version="0.1.20919.1" />
+  </Product>
+</ReleaseManifest>

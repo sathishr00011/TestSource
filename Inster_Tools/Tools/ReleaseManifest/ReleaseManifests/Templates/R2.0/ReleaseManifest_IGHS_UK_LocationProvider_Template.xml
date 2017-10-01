@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ReleaseManifest type="component" region="UK">
+    <Product Name="LocationProvider" InstallType="Install" >
+       <Package Name="LocationProvider" InstallType="Install" />          
+       </Product>	
+</ReleaseManifest>

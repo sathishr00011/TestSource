@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ReleaseManifest type="component" region="UK">
+            
+    <Product Name="ProductIntegration" InstallType="Install" >      
+        <Service TargetServerType="AppStoreAppServer" Name="Integration" InstallType="Install" artifactIdentifier="Integration">
+          <Package Name="Tesco.Com.Integration" InstallType="Install" />
+          <Package Name="Tesco.Com.Integration.WcfHost" InstallType="Install" />          
+          <Package Name="Tesco.Com.Core" InstallType="Install" />
+          <Package Name="AppStore.Common.Library" InstallType="Install" />
+          <Package Name="AppStore.SmartStore.Contracts" InstallType="Install" />
+          <Package Name="AppStore.SmartStore.Library" InstallType="Install" />          
+        </Service>
+		
+    </Product>
+    
+</ReleaseManifest>

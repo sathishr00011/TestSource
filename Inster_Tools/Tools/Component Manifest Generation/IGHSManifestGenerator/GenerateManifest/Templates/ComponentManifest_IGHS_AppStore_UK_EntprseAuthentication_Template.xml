@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ReleaseManifest ReleaseVersion="" Region="UK"> 
+<Product Name="EntprseAuthentication" InstallType="Install" >
+    <Service TargetServerType="AppStoreAppServer" Name="Authentication" InstallType="Install" AppType="WEBSVC"  artifactIdentifier="Enterprise.Authentication.Service">
+      <Package Name="Enterprise.Authentication.Contracts" InstallType="Install" />
+      <Package Name="Enterprise.Authentication.Library" InstallType="Install" />
+      <Package Name="Enterprise.Authentication.WcfClient" InstallType="Install" />
+      <Package Name="Enterprise.Authentication.WcfHost" InstallType="Install" />
+      <Package Name="Tesco.Com.Core" InstallType="Install" Version="0.1.20703.2" />
+      <Package Name="AppStore.Common.Library" InstallType="Install" Version="0.1.20703.4" />
+    </Service>
+  </Product>     
+</ReleaseManifest>

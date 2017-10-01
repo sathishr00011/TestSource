@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ReleaseManifest ReleaseVersion="" Region="UK">
+    <Product Name="BackOffice" InstallType="Install" >
+      <Package Name="Tesco.Com.Web.BackOffice" InstallType="Install" />
+      <Package Name="Tesco.Com.Web.CZ.BackOfficeUIAssets" InstallType="Install" />
+      <Package Name="Tesco.Com.Web.PL.BackOfficeUIAssets" InstallType="Install" />
+      <Package Name="Tesco.Com.Web.SK.BackOfficeUIAssets" InstallType="Install" />
+      <Package Name="Tesco.Com.Web.TH.BackOfficeUIAssets" InstallType="Install" />
+      <Package Name="Tesco.Com.Web.MY.BackOfficeUIAssets" InstallType="Install" />
+      <Package Name="Tesco.Com.Web.HU.BackOfficeUIAssets" InstallType="Install" />
+      <Package Name="Tesco.Com.Web.CN.BackOfficeUIAssets" InstallType="Install" />
+      <Package Name="Tesco.Com.Web.TR.BackOfficeUIAssets" InstallType="Install" />
+      <Package Name="Tesco.Com.Core" InstallType="Install" Version="0.1.20807.1" />
+      <Package Name="AppStore.Common.Library" InstallType="Install" Version="0.1.20822.1" />
+      <Package Name="AppStore.Region.Library" InstallType="Install" Version="0.1.20919.1" />
+      <Package Name="Tesco.Com.Web.Mvc" InstallType="Install" Version="0.1.20920.1"/>
+      <Package Name="Tesco.Com.Web.Common.BackOfficeUIAssets" InstallType="Install" />
+      <Package Name="AppStore.Content.Contracts" InstallType="Install" Version="0.1.20827.1" />
+      <Package Name="AppStore.Content.Library" InstallType="Install" Version="0.1.20919.1"/>
+      <Package Name="AppStore.StoreHouse.Contracts" InstallType="Install" Version="0.1.20924.1" />
+      <Package Name="AppStore.StoreHouse.WcfClient" InstallType="Install" Version="0.1.20924.2"/>
+      <Package Name="AppStore.Authentication.Contracts" InstallType="Install" />
+      <Package Name="AppStore.Authentication.WcfClient" InstallType="Install" />
+      <Package Name="AppStore.Customer.WcfClient" InstallType="Install" Version="0.1.20901.3"/>
+      <Package Name="AppStore.Customer.Contracts" InstallType="Install" Version="0.1.20901.2"/>
+      <Package Name="AppStore.DeviceIdentification.Contracts" InstallType="Install" Version="0.1.20825.3"/>
+      <Package Name="AppStore.DeviceIdentification.WcfClient" InstallType="Install" Version="0.1.20826.2"/>
+      <Package Name="AppStore.Delivery.WcfClient" InstallType="Install" Version="0.1.20925.2" />
+      <Package Name="AppStore.Delivery.Contracts" InstallType="Install" Version="0.1.20925.2"  />
+      <Package Name="Tesco.Com.WebAPIClient.TescoLocationAPIClient" InstallType="Install" Version="0.1.20925.5"  />
+      <Package Name="Tesco.Com.AppStore.StoreAdpater" InstallType="Install" Version="0.1.20925.1" />
+      <Package Name="Tesco.Com.WebAPIClient.WebAPIClientBase" InstallType="Install" Version="0.1.20925.4" />
+    </Product>
+</ReleaseManifest>

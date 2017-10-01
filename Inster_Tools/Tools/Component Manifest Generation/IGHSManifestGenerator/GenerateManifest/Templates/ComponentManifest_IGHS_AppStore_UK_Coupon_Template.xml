@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ReleaseManifest ReleaseVersion="" Region="UK">      
+<Product Name="Coupon" InstallType="Install" >
+  <Service TargetServerType="AppStoreAppServer" Name="Notification" InstallType="Install" AppType="WEBSVC" artifactIdentifier="AppStore.Notification.Service">
+    <Package Name="AppStore.Coupon.Contracts" InstallType="Install" />
+    <Package Name="AppStore.Coupon.Library" InstallType="Install" />
+    <Package Name="AppStore.Coupon.WcfClient" InstallType="Install" />
+    <Package Name="AppStore.Coupon.WcfHost" InstallType="Install" />
+    <Package Name="Tesco.Com.Core" InstallType="Install" Version="0.1.20807.1" />
+    <Package Name="AppStore.Common.Library" InstallType="Install" Version="0.1.20807.1" />
+    <Package Name="AppStore.Customer.Contracts" InstallType="Install" Version="0.1.20901.2"/>
+    <Package Name="AppStore.Customer.WcfClient" InstallType="Install" Version="0.1.20919.1"/>
+  </Service>
+    </Product>
+</ReleaseManifest>

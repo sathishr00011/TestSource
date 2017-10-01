@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<appSettings>
+  <add key="Totalling_VersionNumber" value="2.0.0.3" />
+  <add key="QueueProcessor_VersionNumber" value="2.0.0.1" />
+  <add key="Checkout_VersionNumber" value="2.0.0.2" />
+</appSettings>

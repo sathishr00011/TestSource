@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ReleaseManifest type="component" region="UK">
+    <Product Name="BuyListIntegration" InstallType="Install" >
+        <Service TargetServerType="AppStoreAppServer" Name="BuyListIntegration" InstallType="Install" artifactIdentifier="BuyListIntegration">
+          <Package Name="Tesco.Com.BuyList.Integration" InstallType="Install" />
+          <Package Name="Tesco.Com.WebAPIClient.WebAPIClientBase" InstallType="Install" Version="0.1.20925.4"/>
+          <Package Name="Tesco.Com.WebAPIClient.ProductListClient" InstallType="Install" />
+          </Service>
+    </Product>	
+</ReleaseManifest>

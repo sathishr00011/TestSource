@@ -1,0 +1,10 @@
+
+D:\cmmdline>call vcvarsall.bat 
+Setting environment for using Microsoft Visual Studio 2010 x86 tools.
+Microsoft (R) TfsBuild Version 10.0.0.0
+for Microsoft Visual Studio v10.0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+
+Build number: 139640
+    Updated Build number: Component_ManifestGeneration_Myaccount_10.0.0.5
+Partially Succeeded

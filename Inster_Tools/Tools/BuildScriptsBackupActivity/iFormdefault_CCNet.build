@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<project name="Blueprint" default="recurse">
+  <!-- default configuration -->
+  <property name="framework.dir" value="C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727"/>
+  <property name="SysRoot.dir"   value="\\UKDBT66BUILD05v.dev.global.tesco.org\Main\"/>
+  <property name="Distination.dir"   value="\\UKDBT66BUILD05v.dev.global.tesco.org\"/>
+  <property name="Distinationvdi1.dir"   value="\\VDI01T11HSC-157\"/>
+  <property name="Distinationvdi2.dir"   value="\\VDI01T11HSC-680\"/>
+ <target name="recurse" description="Builds recursively all subprojects"  depends="copyNuGetPackges,copyNuGetPackgesvdi1,copyNuGetPackgesvdi2" />
+
+ <target name="copyNuGetPackges">
+<copy todir="${Distination.dir}/Packages\">
+<fileset basedir="${SysRoot.dir}/Packages\">
+<include name="**.*" />
+</fileset>
+</copy>
+</target>
+
+  <target name="copyNuGetPackgesvdi1">
+    <copy todir="${Distinationvdi1.dir}/NugetBackup/Packages\">
+      <fileset basedir="${SysRoot.dir}/Packages\">
+        <include name="**.*" />
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="copyNuGetPackgesvdi2">
+    <copy todir="${Distinationvdi2.dir}/NugetBackup/Packages\">
+      <fileset basedir="${SysRoot.dir}/Packages\">
+        <include name="**.*" />
+      </fileset>
+    </copy>
+  </target>
+	
+	
+</project>

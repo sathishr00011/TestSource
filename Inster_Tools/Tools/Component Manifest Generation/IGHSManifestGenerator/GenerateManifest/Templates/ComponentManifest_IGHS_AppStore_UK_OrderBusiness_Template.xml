@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ReleaseManifest ReleaseVersion="" Region="UK"> 
+<Product Name="Order.Business" InstallType="Install" >	
+        <Service TargetServerType="AppStoreAppServer" Name="Order.Business" InstallType="Install" AppType="WEBSVC" artifactIdentifier="AppStore.Business.OrderManager">
+          <Package Name="Business.OrderManager.Contracts" InstallType="Install" />
+          <Package Name="Business.OrderManager.Library" InstallType="Install" />
+          <Package Name="Business.OrderManager.WcfHost" InstallType="Install" />
+          <Package Name="Tesco.Com.Core" InstallType="Install" Version="0.1.20703.2" />
+      <Package Name="AppStore.Common.Library" InstallType="Install" Version="0.1.20703.4" />
+          <Package Name="AppStore.Delivery.Contracts" InstallType="Install" Version="0.1.20925.2"/>
+          <Package Name="AppStore.Delivery.WcfClient" InstallType="Install" Version="0.1.20925.2"/>
+          <Package Name="AppStore.Order.Contracts" InstallType="Install" />
+          <Package Name="AppStore.Order.WcfClient" InstallType="Install" />
+          <Package Name="AppStore.Coupon.Contracts" InstallType="Install" />
+          <Package Name="AppStore.Coupon.WcfClient" InstallType="Install" />
+          <Package Name="AppStore.Customer.Contracts" InstallType="Install" Version="0.1.20901.2"/>
+          <Package Name="AppStore.Customer.WcfClient" InstallType="Install" Version="0.1.20919.1"/>
+        </Service>
+	</Product>     
+</ReleaseManifest>

@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ReleaseManifest ReleaseVersion="" Region="UK">
+  <!--> sample<-->
+  <Product Name="FindProducts" InstallType="Install">
+    <Package Name="Tesco.Com.Web.UI.Grocery.Products" InstallType="Install" />
+    <Package Name="AppStore.Product.Contracts" InstallType="Install" Version="0.1.21104.1" />
+    <Package Name="AppStore.Product.WcfClient" InstallType="Install" Version="0.1.21104.1" />
+    <Package Name="AppStore.GroceryProduct.WcfClient" InstallType="Install" Version="0.1.21104.1" />
+    <Package Name="AppStore.GroceryProduct.Contracts" InstallType="Install" Version="0.1.21104.1" />
+    <Package Name="Appstore.ProductAdapter" InstallType="Install" />
+    <Package Name="Tesco.Com.WebAPIClient.ProductListClient" InstallType="Install" />
+    <Package Name="AppStore.Grocery.Business.Product" InstallType="Install" />
+    <Package Name="AppStore.Favourite.Contracts" InstallType="Install" />
+    <Package Name="AppStore.Favourite.WcfClient" InstallType="Install" />
+    <Package Name="AppStore.GroceryProduct.Wraper" InstallType="Install" />
+    <Package Name="AppStore.Product.Wraper" InstallType="Install" />
+  </Product>
+</ReleaseManifest>

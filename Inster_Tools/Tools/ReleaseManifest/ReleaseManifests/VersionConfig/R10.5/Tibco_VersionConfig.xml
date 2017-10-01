@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<appSettings>
+  <add key="TIBCO_VersionNumber" value="10.5.0.0" />
+</appSettings>

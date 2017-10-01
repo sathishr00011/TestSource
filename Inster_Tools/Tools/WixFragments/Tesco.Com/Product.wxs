@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Include the references to the Project and the GUIDS inclusion-->
+<?include Project.wxi ?>
+<?include Guids.wxi ?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Id="$(var.ProductGuid)" Name="$(var.ProductName) ($(var.Version))" Language="1033" Version="$(var.Version)" Manufacturer="Tesco.Com" UpgradeCode="$(var.UpgradeCode)">
+    <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+		<!-- Custom Actions -->
+		<InstallExecuteSequence>
+			<!-- The TARGETDIR is "" if it is not specified -->
+			<Custom Action="DefaultInstallDrive" Before="CostInitialize" ><![CDATA[INSTALLDRIVE=""]]></Custom>
+		</InstallExecuteSequence>
+
+		<!-- Initialise the Install Drive, Base Directory and the Log Drive if not specified in the call to the MSI-->
+		<CustomAction Id="DefaultInstallDrive" Property="INSTALLDRIVE" Value="D:\" />
+
+		<!-- The name of the cab inside the MSI-->
+		<Media Id="1" Cabinet="ApplicationContents.cab" EmbedCab="yes" />
+
+		<!-- The Features to be installed -->
+		<Feature Id="ProductFeature" Title="$(var.ProductName).Setup" Level="1">
+			<!-- Note: The following ComponentGroupRef is required to pull in generated authoring from project references. -->
+			<ComponentGroupRef Id="Product.Generated" />
+			<ComponentGroupRef Id="TescoDotComInstaller"/>
+		</Feature>
+
+		<!-- This forces on to the D: Drive-->
+		<Property Id="ROOTDRIVE" Value="D:\" />
+
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="INSTALLDRIVE">
+				<Directory Id="BaseDir" Name="Tesco.Com">
+					<Directory Id="ApplicationDirectory" Name="$(var.ApplicationName)">
+						<!-- This is the location that the files will be published to -->
+					</Directory>
+				</Directory>
+			</Directory>
+		</Directory>
+
+	</Product>
+
+	<Fragment>
+		<ComponentGroup Id="TescoDotComInstaller">
+			<ComponentGroupRef Id="ApplicationFiles" />
+		</ComponentGroup>
+	</Fragment>
+</Wix>

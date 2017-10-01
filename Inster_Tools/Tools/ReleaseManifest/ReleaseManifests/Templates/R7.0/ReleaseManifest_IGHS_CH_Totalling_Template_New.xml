@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ReleaseManifest type="component"  Region="CH">
+   	<Product Name="Totalling" InstallType="Install" >
+      <Service TargetServerType="AppStoreAppServer" Name="Totalling" InstallType="Install" AppType="WEBSVC" artifactIdentifier="AppStore.Totalling.Service">
+        <Package Name="AppStore.Totalling.Contracts" InstallType="Install" />
+        <Package Name="AppStore.Totalling.Library" InstallType="Install" />
+        <Package Name="AppStore.Totalling.WcfHost" InstallType="Install" />
+        <Package Name="Tesco.Com.Core" InstallType="Install" Version="0.1.20709.1" />
+        <Package Name="AppStore.Common.Library" InstallType="Install" Version="0.1.20211.2" />
+        <Package Name="AppStore.QueueProcessor.Contracts" InstallType="Install" />
+        <Package Name="AppStore.QueueProcessor.Library" InstallType="Install" />
+      </Service>
+    </Product>
+</ReleaseManifest>  

@@ -1,0 +1,13 @@
+"ScheduleBuild" "D:\UpdateRootManifest\UpdateRootManifest\bin\Debug\rootRMFile.xml" "D:\UpdateRootManifest\UpdateRootManifest\bin\Debug\ComponentManifest_IGHS_Login_UK_13.0.0.5.xml" "Login"
+
+
+
+"ScheduleBuild" "D:\UpdateRootManifest\UpdateRootManifest\bin\Debug\rootRMFile.xml" "D:\UpdateRootManifest\UpdateRootManifest\bin\Debug\ComponentManifest_IGHS_Login_UK_13.0.0.5.xml" "Login"
+
+
+"TriggerDeploy" "D:\UpdateRootManifest\UpdateRootManifest\bin\Debug\rootRMFile.xml" "D:\UpdateRootManifest\UpdateRootManifest\bin\Debug\ComponentManifest_IGHS_Login_UK_13.0.0.5.xml"
+
+
+
+
+

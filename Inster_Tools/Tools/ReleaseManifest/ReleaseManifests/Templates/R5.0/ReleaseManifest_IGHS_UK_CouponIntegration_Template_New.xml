@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ReleaseManifest type="component" region="UK">
+    <Product Name="CouponIntegration" InstallType="Install" >
+        <Service TargetServerType="AppStoreAppServer" Name="CouponIntegration" InstallType="Install" artifactIdentifier="CouponIntegration">
+          <Package Name="Tesco.Com.Coupon.Integration" InstallType="Install" />
+          <Package Name="Tesco.Com.Core" InstallType="Install" Version="0.1.20703.2" />
+      <Package Name="AppStore.Common.Library" InstallType="Install" Version="0.1.20703.4" />
+        </Service>
+    </Product>	
+</ReleaseManifest>

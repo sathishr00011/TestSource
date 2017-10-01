@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ReleaseManifest ReleaseVersion="" Region="UK">
+<Product Name="ReportingWebSite" InstallType="Install" >
+	<Package Name="Tesco.Com.Web.Reporting" InstallType="Install" />
+	<Package Name="Tesco.Com.Web.Reporting.UIAssets" InstallType="Install" />
+	 <Package Name="Tesco.Com.Core" InstallType="Install" Version="0.1.20912.1" />
+	<Package Name="AppStore.Common.Library" InstallType="Install" Version="0.1.21110.5" />
+	<Package Name="AppStore.Region.Library" InstallType="Install" Version="0.1.20919.1"/>
+	<Package Name="Tesco.Com.Web.Mvc" InstallType="Install" Version="0.1.20909.2"/>
+	<Package Name="Tesco.Com.Web.Common.ReportingUIAssets" InstallType="Install" />
+	<Package Name="AppStore.Content.Contracts" InstallType="Install" Version="0.1.20919.1"/>
+	<Package Name="AppStore.Content.Library" InstallType="Install" Version="0.1.20919.1"/>
+	<Package Name="AppStore.Authentication.Contracts" InstallType="Install" Version="0.1.21107.1"/>
+	<Package Name="AppStore.Authentication.WcfClient" InstallType="Install"  Version="0.1.21107.1"/>
+	<Package Name="AppStore.ReportingManagement.Service.Contracts" InstallType="Install" />
+	<Package Name="AppStore.ReportingManagement.Service.WCFClient" InstallType="Install" />
+	<Package Name="AppStore.Reporting.Business.Components" InstallType="Install" />
+</Product>
+ </ReleaseManifest >

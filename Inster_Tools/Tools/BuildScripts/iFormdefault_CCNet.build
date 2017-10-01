@@ -1,0 +1,388 @@
+<?xml version="1.0"?>
+<project name="Blueprint" default="recurse">
+  <!-- default configuration -->
+  <property name="framework.dir" value="C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727"/>
+  <property name="SysRoot.dir"   value="${arg.sourcepath}\Ighs.ApplicationParameter\ApplicationParameter\Deployments"/>
+  <property name="Distination.dir"   value="\\uktee01-clusdb\IGHSBuildOutput\IGHS_Manifest\NonRestricted"/>   
+ 
+ <target name="recurse" description="Builds recursively all subprojects"  depends="copyapplicationdevapr14,copyapplicationdevcer14,copyapplicationdevtibcor14,copyapplicationdevchr14,copyapplicationstgapr14,copyapplicationstgcer14,copyapplicationstgchr14,
+         copyapplicationdevap4
+,copyapplicationdevce4
+,copyapplicationdevtibco4
+,copyapplicationdevch4
+,copyapplicationstgap4
+,copyapplicationstgce4
+,copyapplicationstgtibco4
+,copyapplicationstgch4
+,copyapplicationdbtap4
+,copyapplicationdbtce4
+,copyapplicationdbttibco4
+,copyapplicationdbtch4,
+         copyapplicationdevap5
+,copyapplicationdevce5
+,copyapplicationdevtibco5
+,copyapplicationdevch5
+,copyapplicationstgap5
+,copyapplicationstgce5
+,copyapplicationstgtibco5
+,copyapplicationstgch5
+,copyapplicationdbtap5
+,copyapplicationdbtce5
+,copyapplicationdbttibco5
+,copyapplicationdbtch5,copyapplicationdbtapr14,copyapplicationdbtcer14,copyapplicationdevapr15,copyapplicationdevcer15,copyapplicationdbtapr15,
+copyapplicationdbtcer15,copyapplicationstgapr15,copyapplicationstgcer15" />
+
+  
+  <!-- 15.0 Application parameter file Copy -->
+
+  <!-- DEV -->
+  
+  <target name="copyapplicationdevapr15">
+    <copy todir="${Distination.dir}/DEV\AP\15.0\">
+      <fileset basedir="${SysRoot.dir}/R15.0\DEV\ApplicationParameters\AP">
+        <include name="**.*" />
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="copyapplicationdevcer15">
+    <copy todir="${Distination.dir}/DEV\CE\15.0\">
+      <fileset basedir="${SysRoot.dir}/R15.0\DEV\ApplicationParameters\CE">
+        <include name="**.*" />
+      </fileset>
+    </copy>
+  </target>
+  
+  <!-- 15.0 Application parameter file Copy -->
+  
+  <!-- DBT -->
+  
+  <target name="copyapplicationdbtapr15">
+    <copy todir="${Distination.dir}/DBT\AP\15.0\">
+      <fileset basedir="${SysRoot.dir}/R15.0\DBT\ApplicationParameters\AP">
+        <include name="**.*" />
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="copyapplicationdbtcer15">
+    <copy todir="${Distination.dir}/DBT\CE\15.0\">
+      <fileset basedir="${SysRoot.dir}/R15.0\DBT\ApplicationParameters\CE">
+        <include name="**.*" />
+      </fileset>
+    </copy>
+  </target>
+  
+  <!-- 15.0 Application parameter file Copy -->
+  
+  <!-- STG -->
+  
+  <target name="copyapplicationstgapr15">
+    <copy todir="${Distination.dir}/STG\AP\15.0\">
+      <fileset basedir="${SysRoot.dir}/R15.0\STG\ApplicationParameters\AP">
+        <include name="**.*" />
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="copyapplicationstgcer15">
+    <copy todir="${Distination.dir}/STG\CE\15.0\">
+      <fileset basedir="${SysRoot.dir}/R15.0\STG\ApplicationParameters\CE">
+        <include name="**.*" />
+      </fileset>
+    </copy>
+  </target>
+  
+  
+  <!-- 14.0 Application parameter file Copy -->
+
+  <!-- DEV -->
+  
+  <target name="copyapplicationdevapr14">
+    <copy todir="${Distination.dir}/DEV\AP\14.0\">
+      <fileset basedir="${SysRoot.dir}/R14.0\DEV\ApplicationParameters\AP">
+        <include name="**.*" />
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="copyapplicationdevcer14">
+    <copy todir="${Distination.dir}/DEV\CE\14.0\">
+      <fileset basedir="${SysRoot.dir}/R14.0\DEV\ApplicationParameters\CE">
+        <include name="**.*" />
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="copyapplicationdevtibcor14">
+    <copy todir="${Distination.dir}/DEV\Application_parameterFile_tibco\14.0\">
+      <fileset basedir="${SysRoot.dir}/R14.0\DEV\ApplicationParameters\Application_parameterFile_tibco">
+        <include name="**.*" />
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="copyapplicationdevchr14">
+    <copy todir="${Distination.dir}/DEV\CH\14.0\">
+      <fileset basedir="${SysRoot.dir}/R14.0\DEV\ApplicationParameters\CH">
+        <include name="**.*" />
+      </fileset>
+    </copy>
+  </target>
+
+  <!-- 14.0 Application parameter file Copy -->
+  
+  <!-- STG -->
+  
+  <target name="copyapplicationstgapr14">
+    <copy todir="${Distination.dir}/STG\AP\14.0\">
+      <fileset basedir="${SysRoot.dir}/R14.0\STG\ApplicationParameters\AP">
+        <include name="**.*" />
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="copyapplicationstgcer14">
+    <copy todir="${Distination.dir}/STG\CE\14.0\">
+      <fileset basedir="${SysRoot.dir}/R14.0\STG\ApplicationParameters\CE">
+        <include name="**.*" />
+      </fileset>
+    </copy>
+  </target>  
+
+  <target name="copyapplicationstgchr14">
+    <copy todir="${Distination.dir}/STG\CH\14.0\">
+      <fileset basedir="${SysRoot.dir}/R14.0\STG\ApplicationParameters\CH">
+        <include name="**.*" />
+      </fileset>
+    </copy>
+  </target>
+  
+  <!-- 14.0 Application parameter file Copy -->
+  
+  <!-- DBT -->
+  
+  <target name="copyapplicationdbtapr14">
+    <copy todir="${Distination.dir}/DBT\AP\14.0\">
+      <fileset basedir="${SysRoot.dir}/R14.0\DBT\ApplicationParameters\AP">
+        <include name="**.*" />
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="copyapplicationdbtcer14">
+    <copy todir="${Distination.dir}/DBT\CE\14.0\">
+      <fileset basedir="${SysRoot.dir}/R14.0\DBT\ApplicationParameters\CE">
+        <include name="**.*" />
+      </fileset>
+    </copy>
+  </target>  
+ 
+  <!--RTC4.0 -->
+
+
+  <target name="copyapplicationdevap4">
+    <copy todir="${Distination.dir}/DEV\AP\4.0\">
+      <fileset basedir="${SysRoot.dir}/R4.0\DEV\ApplicationParameters\AP">
+        <include name="**.*" />
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="copyapplicationdevce4">
+    <copy todir="${Distination.dir}/DEV\CE\4.0\">
+      <fileset basedir="${SysRoot.dir}/R4.0\DEV\ApplicationParameters\CE">
+        <include name="**.*" />
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="copyapplicationdevtibco4">
+    <copy todir="${Distination.dir}/DEV\Application_parameterFile_tibco\4.0\">
+      <fileset basedir="${SysRoot.dir}/R4.0\DEV\ApplicationParameters\Application_parameterFile_tibco">
+        <include name="**.*" />
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="copyapplicationdevch4">
+    <copy todir="${Distination.dir}/DEV\CH\4.0\">
+      <fileset basedir="${SysRoot.dir}/R4.0\DEV\ApplicationParameters\CH">
+        <include name="**.*" />
+      </fileset>
+    </copy>
+  </target>
+
+  <!-- STG -->
+
+  <target name="copyapplicationstgap4">
+    <copy todir="${Distination.dir}/STG\AP\4.0\">
+      <fileset basedir="${SysRoot.dir}/R4.0\STG\ApplicationParameters\AP">
+        <include name="**.*" />
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="copyapplicationstgce4">
+    <copy todir="${Distination.dir}/STG\CE\4.0\">
+      <fileset basedir="${SysRoot.dir}/R4.0\STG\ApplicationParameters\CE">
+        <include name="**.*" />
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="copyapplicationstgtibco4">
+    <copy todir="${Distination.dir}/STG\Application_parameterFile_tibco\4.0\">
+      <fileset basedir="${SysRoot.dir}/R4.0\STG\ApplicationParameters\Application_parameterFile_tibco">
+        <include name="**.*" />
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="copyapplicationstgch4">
+    <copy todir="${Distination.dir}/STG\CH\4.0\">
+      <fileset basedir="${SysRoot.dir}/R4.0\STG\ApplicationParameters\CH">
+        <include name="**.*" />
+      </fileset>
+    </copy>
+  </target>
+
+  <!-- DBT -->
+
+  <target name="copyapplicationdbtap4">
+    <copy todir="${Distination.dir}/DBT\AP\4.0\">
+      <fileset basedir="${SysRoot.dir}/R4.0\DBT\ApplicationParameters\AP">
+        <include name="**.*" />
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="copyapplicationdbtce4">
+    <copy todir="${Distination.dir}/DBT\CE\4.0\">
+      <fileset basedir="${SysRoot.dir}/R4.0\DBT\ApplicationParameters\CE">
+        <include name="**.*" />
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="copyapplicationdbttibco4">
+    <copy todir="${Distination.dir}/DBT\Application_parameterFile_tibco\4.0\">
+      <fileset basedir="${SysRoot.dir}/R4.0\DBT\ApplicationParameters\Application_parameterFile_tibco">
+        <include name="**.*" />
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="copyapplicationdbtch4">
+    <copy todir="${Distination.dir}/DBT\CH\4.0\">
+      <fileset basedir="${SysRoot.dir}/R4.0\DBT\ApplicationParameters\CH">
+        <include name="**.*" />
+      </fileset>
+    </copy>
+  </target>
+
+
+  <!--RTC5.0 -->
+
+
+  <target name="copyapplicationdevap5">
+    <copy todir="${Distination.dir}/DEV\AP\5.0\">
+      <fileset basedir="${SysRoot.dir}/R5.0\DEV\ApplicationParameters\AP">
+        <include name="**.*" />
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="copyapplicationdevce5">
+    <copy todir="${Distination.dir}/DEV\CE\5.0\">
+      <fileset basedir="${SysRoot.dir}/R5.0\DEV\ApplicationParameters\CE">
+        <include name="**.*" />
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="copyapplicationdevtibco5">
+    <copy todir="${Distination.dir}/DEV\Application_parameterFile_tibco\5.0\">
+      <fileset basedir="${SysRoot.dir}/R5.0\DEV\ApplicationParameters\Application_parameterFile_tibco">
+        <include name="**.*" />
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="copyapplicationdevch5">
+    <copy todir="${Distination.dir}/DEV\CH\5.0\">
+      <fileset basedir="${SysRoot.dir}/R5.0\DEV\ApplicationParameters\CH">
+        <include name="**.*" />
+      </fileset>
+    </copy>
+  </target>
+
+  <!-- STG -->
+
+  <target name="copyapplicationstgap5">
+    <copy todir="${Distination.dir}/STG\AP\5.0\">
+      <fileset basedir="${SysRoot.dir}/R5.0\STG\ApplicationParameters\AP">
+        <include name="**.*" />
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="copyapplicationstgce5">
+    <copy todir="${Distination.dir}/STG\CE\5.0\">
+      <fileset basedir="${SysRoot.dir}/R5.0\STG\ApplicationParameters\CE">
+        <include name="**.*" />
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="copyapplicationstgtibco5">
+    <copy todir="${Distination.dir}/STG\Application_parameterFile_tibco\5.0\">
+      <fileset basedir="${SysRoot.dir}/R5.0\STG\ApplicationParameters\Application_parameterFile_tibco">
+        <include name="**.*" />
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="copyapplicationstgch5">
+    <copy todir="${Distination.dir}/STG\CH\5.0\">
+      <fileset basedir="${SysRoot.dir}/R5.0\STG\ApplicationParameters\CH">
+        <include name="**.*" />
+      </fileset>
+    </copy>
+  </target>
+
+  <!-- DBT -->
+
+  <target name="copyapplicationdbtap5">
+    <copy todir="${Distination.dir}/DBT\AP\5.0\">
+      <fileset basedir="${SysRoot.dir}/R5.0\DBT\ApplicationParameters\AP">
+        <include name="**.*" />
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="copyapplicationdbtce5">
+    <copy todir="${Distination.dir}/DBT\CE\5.0\">
+      <fileset basedir="${SysRoot.dir}/R5.0\DBT\ApplicationParameters\CE">
+        <include name="**.*" />
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="copyapplicationdbttibco5">
+    <copy todir="${Distination.dir}/DBT\Application_parameterFile_tibco\5.0\">
+      <fileset basedir="${SysRoot.dir}/R5.0\DBT\ApplicationParameters\Application_parameterFile_tibco">
+        <include name="**.*" />
+      </fileset>
+    </copy>
+  </target>
+
+  <target name="copyapplicationdbtch5">
+    <copy todir="${Distination.dir}/DBT\CH\5.0\">
+      <fileset basedir="${SysRoot.dir}/R5.0\DBT\ApplicationParameters\CH">
+        <include name="**.*" />
+      </fileset>
+    </copy>
+  </target>  
+ 
+</project>

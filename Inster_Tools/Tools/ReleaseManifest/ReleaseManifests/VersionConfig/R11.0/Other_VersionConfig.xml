@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<appSettings>
+  <add key="ProductIntegration_VersionNumber" value="11.0.0.28" />
+  <add key="IntegrationBrandBank_VersionNumber" value="11.0.0.2" />
+  <add key="Login_VersionNumber" value="11.0.0.40" />
+  <add key="UIAssets_VersionNumber" value="11.0.0.60" />
+  <add key="BackOffice_VersionNumber" value="11.0.0.2" />
+  <add key="CouponIntegration_VersionNumber" value="11.0.0.1" />
+  <add key="Endeca_VersionNumber" value="11.0.0.1" />
+  <add key="OrderReprocessor_VersionNumber" value="11.0.0.3" />
+  <add key="ReverseProxy_VersionNumber" value="11.0.0.1" />
+  <add key="BuyListIntegration_VersionNumber" value="11.0.0.1" />
+  <add key="DigitalContentProvider_VersionNumber" value="11.0.0.11" />
+  <add key="ProductListProvider_VersionNumber" value="11.0.0.1" />
+  <add key="Database_VersionNumber" value="11.0.0.0" />
+  <add key="LocationProvider_VersionNumber" value="11.0.0.2" />
+</appSettings>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ReleaseManifest ReleaseVersion="" Region="CN">
+  <Applications>
+    <!-- possible values of InstallType are Install, Uninstall, None-->	 
+		  <Product Name="IGHS_Tesco_Common">
+			  <Services>
+				  <Service Name="Core" InstallType="Install">
+            <Component Name="Tesco.Com.Core" InstallType="Install" Version="0.1.20707.1"/>
+            <Component Name="AppStore.Common.Library" InstallType="Install" Version="0.1.20707.3"/>
+				  </Service>
+			  </Services>
+		  </Product>
+    <Product Name="PCS" Version="3.0">
+      <Services>
+        <Service Type="WCF" TargetServerType="PCSApplicationServer" InstallType="Install">
+          <Component Name="GHS_PCS_config" MSIDeployFolderName="GHS_PCS_Config" />
+          <Component Name="GHS_PCS_CoreEventManager" MSIDeployFolderName="GHS_PCS_CoreEventManager" />
+          <Component Name="GHS_PCS_OrderBroker" MSIDeployFolderName="GHS_PCS_OrderBroker" />
+          <Component Name="GHS_Adapter" MSIDeployFolderName="GHS_Adapter" />
+          <Component Name="GHS_PCS_UserManagement" MSIDeployFolderName="GHS_PCS_UserManagement" />
+          <Component Name="GHS_LabelService" MSIDeployFolderName="GHS_LabelService" />
+          <Component Name="GHS_PCS_CoreDataAccess" MSIDeployFolderName="GHS_PCS_CoreDataAccess" />
+          <Component Name="GHS_PCS_Core" MSIDeployFolderName="GHS_PCS_Core" />
+          <Component Name="GHS_E2EService" MSIDeployFolderName="GHS_E2EService" />
+        </Service>
+        <Service Type="DeliveryScheduler" TargetServerType="PCSApplicationServer" InstallType="Install">
+          <Component Name="GHS_DeliveryScheduler" MSIDeployFolderName="GHS_DeliveryScheduler" />
+        </Service>
+		  <Service Type="SoftwareUpdater" TargetServerType="PCSSoftwareUpdaterServer" InstallType="Install">
+			  <Component Name="GHS_SoftwareUpdater" MSIDeployFolderName="GHS_SoftwareUpdater" />
+		  </Service>
+        <Service Type="WebApp" TargetServerType="PCSApplicationServer" InstallType="Install">
+          <Component Name="PCSAdmin" MSIDeployFolderName="PCSAdmin" />
+        </Service>
+		  <Service Type="WebApp" TargetServerType="PCSApplicationServer" InstallType="Install">
+			  <Component Name="ManualAudit" MSIDeployFolderName="ManualAudit" />
+		  </Service>
+        <Service Type="Windows" TargetServerType="PCSApplicationServer" InstallType="Install">
+          <Component Name="GHS_PCS_PrintingService" ServiceExe="Tesco.Instore.Printing.PrintingService.exe" />
+          <Component Name="GHS_PCS_Scheduler" ServiceExe="Tesco.Instore.PCS.Scheduler.Service.exe" />
+          <Component Name="GHS_PCS_Filewatcher" ServiceExe="Tesco.Instore.PCS.PSFileWatcher.exe" />
+        </Service>
+        <Service Type="LabelPrinter" TargetServerType="PCSApplicationServer" InstallType="Install">
+          <Component Name="PCSEpsonLabelPrinter" MSIDeployFolderName="GHS_PCS_PrintingService" />
+        </Service>
+		  <Service Type="AppStoreService" TargetServerType="PCSApplicationServer" InstallType="Install" Name="Picking" AppType="WEBSVC" artifactIdentifier="AppStore.Picking.Service">
+			  <Component Name="AppStore.Picking.Contracts" MSIDeployFolderName="AppStore.Picking.Contracts" />
+			  <Component Name="AppStore.Picking.Library" MSIDeployFolderName="AppStore.Picking.Library" />
+			  <Component Name="AppStore.Picking.WcfClient" MSIDeployFolderName="AppStore.Picking.WcfClient" />
+			  <Component Name="AppStore.Picking.WcfHost" MSIDeployFolderName="AppStore.Picking.WcfHost" />
+			  <Pre-Requisties>
+				  <Package Name="Tesco.Com.Core"/>
+				  <Package Name="AppStore.Common.Library"/>
+			  </Pre-Requisties>
+		  </Service>
+		  <Service Type="AppStoreService" TargetServerType="PCSApplicationServer" InstallType="Install" Name="PickingAudit" AppType="WEBSVC" artifactIdentifier="AppStore.PickingAudit.Service">
+			  <Component Name="AppStore.PickingAudit.Contracts" MSIDeployFolderName="AppStore.PickingAudit.Contracts" />
+			  <Component Name="AppStore.PickingAudit.Library" MSIDeployFolderName="AppStore.PickingAudit.Library" />
+			  <Component Name="AppStore.PickingAudit.WcfClient" MSIDeployFolderName="AppStore.PickingAudit.WcfClient" />
+			  <Component Name="AppStore.PickingAudit.WcfHost" MSIDeployFolderName="AppStore.PickingAudit.WcfHost" />
+			  <Pre-Requisties>
+				  <Package Name="Tesco.Com.Core"/>
+				  <Package Name="AppStore.Common.Library"/>
+			  </Pre-Requisties>
+		  </Service>
+      </Services>
+	
+    </Product>
+  </Applications>
+</ReleaseManifest>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ReleaseManifest type="component"  Region="CH">
+   
+  <Product Name="QueueProcessor" InstallType="Install" >
+    <Service TargetServerType="AppStoreAppServer" Name="QueueProcessor" InstallType="Install" AppType="WINSVC" artifactIdentifier="AppStore.QueueProcessor.Service">
+      <Package Name="AppStore.QueueProcessor.Contracts" InstallType="Install" />
+      <Package Name="AppStore.QueueProcessor.Library" InstallType="Install" />
+      <Package Name="AppStore.QueueProcessor.WindowsService" InstallType="Install" />
+      <Package Name="Tesco.Com.Core" InstallType="Install" Version="0.1.20709.1" />
+      <Package Name="AppStore.Common.Library" InstallType="Install" Version="0.1.20709.2" />
+      <Package Name="AppStore.Totalling.Contracts" InstallType="Install" />
+    </Service>
+  </Product>
+</ReleaseManifest>       
+   

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ReleaseManifest ReleaseVersion="" Region="UK">
+  <!--> sample<-->
+  <Product Name="UIAssets" InstallType="Install" >
+	   <Package Name="Tesco.Com.Web.UIAssets" InstallType="Install" />
+	   <Package Name="Tesco.Com.Web.YUI" InstallType="Install" Version="0.1.20923.1" />
+  </Product>
+</ReleaseManifest>

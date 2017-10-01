@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ReleaseManifest ReleaseVersion="" Region="UK">      
+<Product Name="Content" InstallType="Install" >
+        <Service TargetServerType="AppStoreAppServer" Name="Content" InstallType="Install" AppType="WEBSVC" artifactIdentifier="AppStore.Content.Service">
+          <Package Name="AppStore.Content.Contracts" InstallType="Install" Version="0.1.20827.1"/>
+          <Package Name="AppStore.Content.Library" InstallType="Install" Version="0.1.20919.1" />
+          <Package Name="AppStore.Content.WcfClient" InstallType="Install" Version="0.1.20919.1"/>
+          <Package Name="AppStore.Content.WcfHost" InstallType="Install" Version="0.1.20919.2"/>          
+          <Package Name="Tesco.Com.Core" InstallType="Install" Version="0.1.20703.2" />
+      <Package Name="AppStore.Common.Library" InstallType="Install" Version="0.1.20703.4" />          
+        </Service>		
+	</Product>
+</ReleaseManifest>

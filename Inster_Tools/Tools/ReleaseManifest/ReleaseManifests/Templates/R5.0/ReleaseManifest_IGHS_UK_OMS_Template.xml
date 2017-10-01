@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReleaseManifest type="component" region="UK">
+
+  <Product Name="Console" InstallType="Install">
+    <Package Name="console" InstallType="Install" />    
+  </Product>
+
+ 	<Product Name="CustomerAmendOrder" InstallType="Install">
+    <Package Name="customeramendorder" InstallType="Install" />    
+  </Product>
+
+ <Product Name="CancelOrder" InstallType="Install">
+    <Package Name="cancelorder" InstallType="Install" />    
+  </Product>
+ 
+<Product Name="PickingOrder" InstallType="Install">
+    <Package Name="pickingorder" InstallType="Install" />    
+  </Product>
+
+<Product Name="CheckoutOrder" InstallType="Install">
+    <Package Name="checkoutorder" InstallType="Install" />    
+  </Product>
+
+<Product Name="DeliverOrder" InstallType="Install">
+    <Package Name="deliverorder" InstallType="Install" />    
+  </Product>
+
+<Product Name="PaymentProcessing" InstallType="Install">
+    <Package Name="paymentprocessing" InstallType="Install" />    
+  </Product>
+
+
+<Product Name="ExternalSystemInterface" InstallType="Install">
+    <Package Name="externalsysteminterface" InstallType="Install" />    
+  </Product>
+
+<Product Name="OMSUtil" InstallType="Install">
+    <Package Name="omsutil" InstallType="Install" />    
+  </Product>
+
+
+<Product Name="Entity" InstallType="Install">
+    <Package Name="entity" InstallType="Install" />    
+  </Product>
+
+<Product Name="Resources" InstallType="Install">
+    <Package Name="resources" InstallType="Install" />    
+  </Product>
+
+<Product Name="LanguagePack" InstallType="Install">
+    <Package Name="ighsresourcebundle" InstallType="Install" />    
+  </Product>
+
+<Product Name="PlatformConfig" InstallType="Install">
+    <Package Name="platformconfig" InstallType="Install" />    
+  </Product>
+
+<Product Name="CountryConfig" InstallType="Install">
+    <Package Name="countryconfig" InstallType="Install" />    
+  </Product>  
+
+</ReleaseManifest>

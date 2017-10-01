@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ReleaseManifest type="component" region="UK">      
+    <Product Name="Endeca" InstallType="Install" >
+      <Package Name="EndecaConfiguration" InstallType="Install" />
+    </Product>    
+</ReleaseManifest>

@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ReleaseManifest ReleaseVersion="" Region="UK_BIReporting">
+  <Applications>
+    <!-- possible values of InstallType are Install, Uninstall, None-->
+    <Product Name="IGHS_Tesco_Common">
+      <Services>
+        <Service Name="Core" InstallType="Install">
+          <Component Name="Tesco.Com.Core" InstallType="Install"/>
+          <Component Name="AppStore.Common.Library" InstallType="Install"/>
+          <Component Name="AppStore.Region.Library" InstallType="Install"/>          
+          <Component Name="AppStore.BIReporting.Contracts" InstallType="Install"/>
+          <Component Name="AppStore.BIReporting.Library" InstallType="Install"/>
+          <Component Name="AppStore.Content.Contracts" InstallType="Install"/>
+          <Component Name="AppStore.Content.Library" InstallType="Install"/>
+          <Component Name="AppStore.Authentication.Contracts" InstallType="Install"/>
+          <Component Name="AppStore.Authentication.WcfClient" InstallType="Install"/>
+          <Component Name="AppStore.ReportingManagement.Service.Contracts" InstallType="Install"/>
+          <Component Name="AppStore.ReportingManagement.Service.WcfClient" InstallType="Install"/>
+        </Service>
+
+        <Service Name="Web" InstallType="Install">
+          <Component Name="Tesco.Com.Web.Mvc" InstallType="Install"/>
+          <Component Name="Tesco.Com.Web.Common" InstallType="Install"/>
+          <Component Name="Tesco.Com.Web.UIAssets" InstallType="Install"/>          
+          <Component Name="Tesco.Com.Web.Common.ReportingUIAssets" InstallType="Install"/>
+        </Service>
+      </Services>
+    </Product>
+    <Product Name="IGHS_Tesco_AppStore" >
+      <Services>
+               
+        <Service Name="BIReporting" TargetServerType="BIReportingAppServer" AppType="WINSVC" InstallType="Install" artifactIdentifier="AppStore.Reporting.Service">
+          <Component Name="AppStore.BIReporting.OMS.IL.WindowsService"/>
+          <Component Name="AppStore.BIReporting.PCS.IL.WindowsService"/>
+          <Component Name="AppStore.BIReporting.ECOUPON.IL.WindowsService"/>
+          <Pre-Requisties>
+            <Package Name="AppStore.BIReporting.Contracts"/>
+            <Package Name="AppStore.BIReporting.Library"/>
+            <Package Name="Tesco.Com.Core"/>
+            <Package Name="AppStore.Common.Library"/>
+          </Pre-Requisties>
+        </Service>        
+        <Service Name="BIReporting.ErroredOutMessagesApp" TargetServerType="BIReportingAppServer" AppType="CONSOLEAPP" InstallType="Install"  artifactIdentifier="AppStore.BIReporting.ErroredOutMessagesApp">
+          <Component Name="AppStore.BIReporting.ErroredOutMessagesApp"/>
+          <Pre-Requisties>
+            <Package Name="AppStore.BIReporting.Contracts"/>
+            <Package Name="AppStore.BIReporting.Library"/>
+            <Package Name="Tesco.Com.Core"/>
+            <Package Name="AppStore.Common.Library"/>
+          </Pre-Requisties>
+        </Service>
+
+      </Services>
+      
+      <Business>
+        <Component Name="AppStore.Reporting.Business.Components"/>
+      </Business>
+
+    </Product>
+
+    <Product Name="IGHS_Tesco_Reporting">
+      <WebSite Name="Reporting" TargetServerType="ReportingWebServer" InstallType="Install" artifactIdentifier="Web.Reporting">
+        <Component Name="Tesco.Com.Web.Reporting" />
+        <Component Name="Tesco.Com.Web.Reporting.UIAssets" />
+        <Pre-Requisties>
+          <Package Name="Tesco.Com.Core" />
+          <Package Name="AppStore.Common.Library" />
+          <Package Name="AppStore.Region.Library" />
+          <Package Name="Tesco.Com.Web.Mvc" />
+          <Package Name="Tesco.Com.Web.Common.ReportingUIAssets" />
+          <Package Name="AppStore.Content.Contracts" />
+          <Package Name="AppStore.Content.Library" />
+          <Package Name="AppStore.Authentication.Contracts" />
+          <Package Name="AppStore.Authentication.WcfClient" />
+          <Package Name="AppStore.ReportingManagement.Service.Contracts" />
+          <Package Name="AppStore.ReportingManagement.Service.WcfClient" />
+          <Package Name="AppStore.Reporting.Business.Components"/>
+        </Pre-Requisties>
+      </WebSite>
+    </Product>
+
+    <Product Name="IGHS_Tesco_ReportingManagement">
+      <Services>
+        <Service TargetServerType="AppStoreAppServer" Name="ReportingManagement" InstallType="Install" AppType="WEBSVC" artifactIdentifier="AppStore.ReportingManagement.Service">
+          <Component Name="AppStore.ReportingManagement.Service.Contracts" />
+          <Component Name="AppStore.ReportingManagement.Service.Library"/>
+          <Component Name="AppStore.ReportingManagement.Service.WcfClient" />
+          <Component Name="AppStore.ReportingManagement.Service.WcfHost" />
+          <Pre-Requisties>
+            <Package Name="Tesco.Com.Core" />
+            <Package Name="AppStore.Common.Library" />
+          </Pre-Requisties>
+        </Service>
+      </Services>
+    </Product>
+
+  </Applications>
+</ReleaseManifest>

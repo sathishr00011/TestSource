@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ReleaseManifest ReleaseVersion="" Region="UK">
+
+  <Product Name="IntegrationBrandBank" InstallType="Install">
+    <Service TargetServerType="AppStoreWebServer" Name="IntegrationBrandBank" InstallType="Install" artifactIdentifier="IntegrationBrandBank">
+      <Package Name="Tesco.Com.Integration.Brandbank" InstallType="Install" />
+       <Package Name="Tesco.Com.Core" InstallType="Install" Version="0.1.20703.2" />
+    </Service>
+  </Product>    
+  
+</ReleaseManifest>

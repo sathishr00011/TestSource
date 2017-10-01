@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ReleaseManifest ReleaseVersion="" Region="UK">      
+<Product Name="Customer" InstallType="Install" >
+        <Service TargetServerType="AppStoreAppServer" Name="Customer" InstallType="Install" AppType="WEBSVC" artifactIdentifier="AppStore.Customer.Service">
+          <Package Name="AppStore.Customer.Contracts" InstallType="Install" Version="0.1.20901.2"/>
+          <Package Name="AppStore.Customer.Library" InstallType="Install" />
+          <Package Name="AppStore.Customer.WcfClient" InstallType="Install" Version="0.1.20919.1"/>
+          <Package Name="AppStore.Customer.WcfHost" InstallType="Install" />          
+           <Package Name="Tesco.Com.Core" InstallType="Install" Version="0.1.20703.2" />
+      <Package Name="AppStore.Common.Library" InstallType="Install" Version="0.1.20703.4" />                    
+        </Service>
+	</Product>
+</ReleaseManifest>
