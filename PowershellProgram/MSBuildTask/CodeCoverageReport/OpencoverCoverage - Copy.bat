@@ -1,0 +1,4 @@
+echo "Runtime_Reports directory created successfully"
+"D:\OpenCover\OpenCover.Console.exe" -register:user -target:"C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\MSTest.exe" -targetdir:"D:\Buildoutput\Search\Binaries" -targetargs:"/resultsfile:D:\Buildoutput\Search\TestResults\Test-Result.trx /testcontainer:EndecaImpl.Tests.dll /testcontainer:OMSRepository.Tests.dll /runconfig:"D:\JenkinsSlave\workspace\Rewards\Search\Local.testsettings"" "-filter:+[*]* -[*.Test.*]*" -mergebyhash -output:D:\Buildoutput\Search\TestResults\coverage-report.xml > D:\Buildoutput\Search\TestResults\log.txt
+taskkill /im vsperfmon.exe /f
+echo "Reports generated successfully"

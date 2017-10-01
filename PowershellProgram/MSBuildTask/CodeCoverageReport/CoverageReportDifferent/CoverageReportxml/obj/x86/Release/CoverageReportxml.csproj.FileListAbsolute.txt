@@ -1,0 +1,7 @@
+D:\MSBuildTask\CodeCoverageReport\CoverageReportDifferent\CoverageReportxml\bin\Release\Microsoft.VisualStudio.Coverage.Symbols.dll
+D:\MSBuildTask\CodeCoverageReport\CoverageReportDifferent\CoverageReportxml\bin\Release\CoverageReportxml.exe.config
+D:\MSBuildTask\CodeCoverageReport\CoverageReportDifferent\CoverageReportxml\bin\Release\CoverageReportxml.exe
+D:\MSBuildTask\CodeCoverageReport\CoverageReportDifferent\CoverageReportxml\bin\Release\CoverageReportxml.pdb
+D:\MSBuildTask\CodeCoverageReport\CoverageReportDifferent\CoverageReportxml\bin\Release\Microsoft.VisualStudio.Coverage.Analysis.dll
+D:\MSBuildTask\CodeCoverageReport\CoverageReportDifferent\CoverageReportxml\obj\x86\Release\CoverageReportxml.exe
+D:\MSBuildTask\CodeCoverageReport\CoverageReportDifferent\CoverageReportxml\obj\x86\Release\CoverageReportxml.pdb

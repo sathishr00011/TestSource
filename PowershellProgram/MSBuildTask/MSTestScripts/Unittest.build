@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<project name="Blueprint" default="recurse">
+  <!-- default configuration -->
+  <!--<property name="framework.dir" value="C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727"/>
+  <property name="SysRoot.dir"   value="D:"/>
+  <property name="TFSSysRoot.dir"   value="E:"/>
+ <property name="source.dir"   value="\\UKTEE01-CLUSDB\BuildOutput\IGHS_Manifest\NonRestricted\DEV"/> -->  
+   
+ <target name="recurse" description="Builds recursively all subprojects"  depends="MstestCoverage" />
+
+
+<target name="MstestCoverage">
+   <foreach item="File" in="D:\Buildoutput\Price\Binaries" property="filename">
+      <do>
+	  <if test="${string::ends-with(filename,'Test.dll')}"> 
+        <echo message="${filename}" />
+<exec program="C:\Program Files (x86)\Microsoft Visual Studio 10.0\Team Tools\Performance Tools\vsinstr.exe">
+                <arg line="/Coverage" />
+                <arg line="${filename}" />
+            </exec>
+	  </if> 
+		
+      </do>
+    </foreach>
+
+</target>
+
+<target name="Poc">
+
+<foreach item="File" in="D:\Buildoutput\Price\Binaries" property="filename"> 
+  <do> 
+    <if test="${string::ends-with(filename,'Test.dll')}"> 
+      <echo message="${filename}" /> 
+    </if> 
+  </do> 
+</foreach>
+			
+</target>
+     
+</project>

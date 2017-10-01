@@ -1,0 +1,6 @@
+D:\MSBuildTask\CodeCoverageReport\CoverageReportxml\CoverageReportxml\bin\Debug\CoverageReportxml.exe
+D:\MSBuildTask\CodeCoverageReport\CoverageReportxml\CoverageReportxml\bin\Debug\CoverageReportxml.pdb
+D:\MSBuildTask\CodeCoverageReport\CoverageReportxml\CoverageReportxml\bin\Debug\Microsoft.VisualStudio.Coverage.Analysis.dll
+D:\MSBuildTask\CodeCoverageReport\CoverageReportxml\CoverageReportxml\obj\x86\Debug\CoverageReportxml.csprojResolveAssemblyReference.cache
+D:\MSBuildTask\CodeCoverageReport\CoverageReportxml\CoverageReportxml\obj\x86\Debug\CoverageReportxml.exe
+D:\MSBuildTask\CodeCoverageReport\CoverageReportxml\CoverageReportxml\obj\x86\Debug\CoverageReportxml.pdb

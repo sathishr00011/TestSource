@@ -1,0 +1,1 @@
+PowerShell.exe -NoProfile -ExecutionPolicy Bypass -Command "& 'D:\boost\CoverageReport.ps1'";
