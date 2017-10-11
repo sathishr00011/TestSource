@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{32DB80D6-70E2-429A-967D-FB0B197E3522}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ManifestTemplates</RootNamespace>
+    <AssemblyName>ManifestTemplates</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="GenerateManifest.exe" />
+    <Content Include="Manifest.Contracts.dll" />
+    <Content Include="Manifest.DefaultImpl.dll" />
+    <Content Include="Manifest.Xml.dll" />
+    <Content Include="ManifestActivityLibrary.dll" />
+    <Content Include="readme.txt" />
+    <Content Include="Templates\ComponentManifest_IGHS_Grocery_UK_MyAccount_Template.xml" />
+    <Content Include="Templates\ReleaseManifest_IGHS_CN_AppStore_Template.xml" />
+    <Content Include="Templates\ReleaseManifest_IGHS_CN_Instore_Template.xml" />
+    <Content Include="Templates\ReleaseManifest_IGHS_CH_Tibco_Template.xml" />
+    <Content Include="Templates\ReleaseManifest_IGHS_HU_AppStore_Template.xml" />
+    <Content Include="Templates\ReleaseManifest_IGHS_HU_Instore_Template.xml" />
+    <Content Include="Templates\ReleaseManifest_IGHS_MY_AppStore_Template.xml" />
+    <Content Include="Templates\ReleaseManifest_IGHS_MY_Instore_Template.xml" />
+    <Content Include="Templates\ReleaseManifest_IGHS_SK_Instore_Template.xml" />
+    <Content Include="Templates\ReleaseManifest_IGHS_CE_Tibco_Template.xml" />
+    <Content Include="Templates\ReleaseManifest_IGHS_CZ_AppStore_Template.xml" />
+    <Content Include="Templates\ReleaseManifest_IGHS_CZ_Instore_Template.xml" />
+    <Content Include="Templates\ReleaseManifest_IGHS_CZ_Tibco_Template.xml" />
+    <Content Include="Templates\ReleaseManifest_IGHS_PL_AppStore_Template.xml" />
+    <Content Include="Templates\ReleaseManifest_IGHS_PL_Instore_Template.xml" />
+    <Content Include="Templates\ReleaseManifest_IGHS_PL_Tibco_Template.xml" />
+    <Content Include="Templates\ReleaseManifest_IGHS_SK_AppStore_Template.xml" />
+    <Content Include="Templates\ReleaseManifest_IGHS_SK_Tibco_Template.xml" />
+    <Content Include="Templates\ReleaseManifest_IGHS_TH_AppStore_Template.xml" />
+    <Content Include="Templates\ReleaseManifest_IGHS_TH_Instore_Template.xml" />
+    <Content Include="Templates\ReleaseManifest_IGHS_UK_AppStore_Template.xml" />
+    <Content Include="Templates\ReleaseManifest_IGHS_UK_OMS_Template.xml" />
+    <Content Include="Templates\ReleaseManifest_IGHS_UK_Tibco_Template.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

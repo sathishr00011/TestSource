@@ -1,0 +1,18 @@
+
+D:\Tesco\TH ForgeAutomation - local and eng>ECHO OFF 
+[25/06/2013 12:52:45.48] Forge Started 
+[25/06/2013 12:52:45.62] Copy delta file from PI directory 
+\\UKDEV66APSQL01v\DataIntegration\International\CN\Product\Reports\FullForge\ProductDelta20130619_054415.zip
+1 File(s) copied
+[25/06/2013 12:53:18.43] Extracting files for forge 
+[25/06/2013 12:53:54.56] File extraction complete 
+[25/06/2013 12:53:54.56] Call Scripts for Local language for cluster 1 - Baseline Update  
+Setting flag 'baseline_data_ready' in the EAC.
+[06.25.13 12:53:58] INFO: Checking definition from AppConfig.xml against existing EAC provisioning.
+[06.25.13 12:53:59] INFO: Definition has not changed.
+[06.25.13 12:53:59] INFO: Starting baseline update script.
+[06.25.13 12:53:59] INFO: Acquired lock 'update_lock'.
+[06.25.13 12:53:59] INFO: Downloading config files from Web Studio.
+[06.25.13 12:53:59] INFO: [ITLHost] Starting shell utility 'cleanDir_config'.
+[06.25.13 12:54:01] INFO: [ITLHost] Starting shell utility 'emgr_update_get_ws_settings'.
+[06.25.13 12:54:03] INFO: [ITLHost] Starting shell utility 'cleanDir_complete-index-config'.

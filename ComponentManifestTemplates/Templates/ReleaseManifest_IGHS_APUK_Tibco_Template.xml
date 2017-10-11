@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ReleaseManifest ReleaseVersion="" Region="APUK">
+	<Applications>
+    <!-- possible values of InstallType are Install, Uninstall, None-->
+		<Product Name="IGHS_Tesco_Tibco" InstallType="Install" Version="">
+			<Services>
+				<Service Name="OrderManagementAckService" InstallType="Uninstall">
+					<Component Name="BW">True</Component>
+					<Component Name="FILE">True</Component>
+					<Component Name="EMS">True</Component>
+				</Service>
+				<Service Name="OrderManagementService" InstallType="Uninstall">
+					<Component Name="BW">True</Component>
+					<Component Name="FILE">True</Component>
+					<Component Name="EMS">True</Component>
+				</Service>
+				<Service Name="CPSIntegrationService" InstallType="Uninstall">
+					<Component Name="BW">True</Component>
+					<Component Name="FILE">True</Component>
+					<Component Name="EMS">True</Component>
+				</Service>				
+				<Service Name="ProductProviderService" InstallType="Uninstall">
+					<Component Name="BW">True</Component>
+					<Component Name="FILE">True</Component>
+					<Component Name="EMS">True</Component>
+				</Service>
+				<Service Name="NotificationService" InstallType="Uninstall">
+					<Component Name="BW">True</Component>
+					<Component Name="FILE">True</Component>
+					<Component Name="EMS">True</Component>
+				</Service>
+				<Service Name="PublishOrderService" InstallType="Uninstall">
+					<Component Name="BW">True</Component>
+					<Component Name="FILE">True</Component>
+					<Component Name="EMS">True</Component>
+				</Service>
+			</Services>
+		</Product>    
+	</Applications>
+</ReleaseManifest>

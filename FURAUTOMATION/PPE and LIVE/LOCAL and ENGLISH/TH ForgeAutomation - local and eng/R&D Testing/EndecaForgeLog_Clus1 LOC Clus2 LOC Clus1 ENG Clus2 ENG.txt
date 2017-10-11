@@ -1,0 +1,160 @@
+
+D:\Endeca Forge for LOCAL AND ENGLISH>ECHO OFF 
+[12/07/2013  8:13:43.05] Forge Started 
+[12/07/2013  8:13:43.22] Copy delta file from PI directory 
+\\UKDEV66APSQL01V\DataIntegration\International\TH\Product\Reports\FullForge\ProductDelta20130610_072524.zip
+1 File(s) copied
+[12/07/2013  8:13:51.19] Extracting files for forge 
+[12/07/2013  8:18:00.78] File extraction complete 
+[12/07/2013  8:18:00.78] Call Scripts for Local language for cluster 1 - Baseline Update  
+Setting flag 'baseline_data_ready' in the EAC.
+[07.12.13 08:18:25] INFO: Checking definition from AppConfig.xml against existing EAC provisioning.
+[07.12.13 08:18:26] INFO: Updating provisioning for host 'webstudio'.
+[07.12.13 08:18:26] INFO: Updating definition for host 'webstudio'.
+[07.12.13 08:18:26] INFO: Updating provisioning for component 'Dgraph1'.
+[07.12.13 08:18:27] INFO: Updating definition for component 'Dgraph1'.
+[07.12.13 08:18:28] INFO: Updating provisioning for component 'Dgraph2'.
+[07.12.13 08:18:28] INFO: Stopping component 'Dgraph2'.
+[07.12.13 08:18:30] INFO: Updating definition for component 'Dgraph2'.
+[07.12.13 08:18:31] INFO: [MDEXHost2] Starting component 'Dgraph2'.
+[07.12.13 08:18:41] INFO: Updating definition for script 'BaselineGenerate'.
+[07.12.13 08:18:41] INFO: Updating definition for script 'PartialUpdate'.
+[07.12.13 08:18:41] INFO: Updating definition for script 'ConfigUpdate'.
+[07.12.13 08:18:42] INFO: Updating definition for custom component 'ConfigManager'.
+[07.12.13 08:18:42] INFO: Updating provisioning for host 'ITLHost'.
+[07.12.13 08:18:42] INFO: Updating definition for host 'ITLHost'.
+[07.12.13 08:18:42] INFO: [ITLHost] Starting shell utility 'mkpath_-logs'.
+[07.12.13 08:18:45] INFO: [ITLHost] Starting shell utility 'mkpath_-'.
+[07.12.13 08:18:46] INFO: Updating provisioning for component 'ConfigurationGeneratorForge'.
+[07.12.13 08:18:46] INFO: Updating definition for component 'ConfigurationGeneratorForge'.
+[07.12.13 08:18:46] INFO: Updating provisioning for component 'PartialConfigurationGeneratorForge'.
+[07.12.13 08:18:46] INFO: Updating definition for component 'PartialConfigurationGeneratorForge'.
+[07.12.13 08:18:47] INFO: Updating provisioning for component 'Forge'.
+[07.12.13 08:18:47] INFO: Updating definition for component 'Forge'.
+[07.12.13 08:18:47] INFO: Updating provisioning for component 'PartialForge'.
+[07.12.13 08:18:47] INFO: Updating definition for component 'PartialForge'.
+[07.12.13 08:18:48] INFO: Updating provisioning for component 'Dgidx'.
+[07.12.13 08:18:48] INFO: Updating definition for component 'Dgidx'.
+[07.12.13 08:18:48] INFO: Updating provisioning for component 'LogServer'.
+[07.12.13 08:18:48] INFO: Stopping component 'LogServer'.
+[07.12.13 08:18:50] INFO: Updating definition for component 'LogServer'.
+[07.12.13 08:18:51] INFO: [LogHost] Starting component 'LogServer'.
+[07.12.13 08:18:53] INFO: Updating definition for script 'DailyReports'.
+[07.12.13 08:18:53] INFO: Updating definition for script 'WeeklyReports'.
+[07.12.13 08:18:54] INFO: Updating definition for script 'DailyHtmlReports'.
+[07.12.13 08:18:54] INFO: Updating definition for script 'WeeklyHtmlReports'.
+[07.12.13 08:18:54] INFO: Updating provisioning for component 'WeeklyReportGenerator'.
+[07.12.13 08:18:54] INFO: Updating definition for component 'WeeklyReportGenerator'.
+[07.12.13 08:18:54] INFO: Updating provisioning for component 'DailyReportGenerator'.
+[07.12.13 08:18:54] INFO: Updating definition for component 'DailyReportGenerator'.
+[07.12.13 08:18:55] INFO: Updating provisioning for component 'WeeklyHtmlReportGenerator'.
+[07.12.13 08:18:55] INFO: Updating definition for component 'WeeklyHtmlReportGenerator'.
+[07.12.13 08:18:55] INFO: Updating provisioning for component 'DailyHtmlReportGenerator'.
+[07.12.13 08:18:55] INFO: Updating definition for component 'DailyHtmlReportGenerator'.
+[07.12.13 08:18:56] INFO: Definition updated.
+[07.12.13 08:18:56] INFO: Starting baseline update script.
+[07.12.13 08:18:56] WARNING: Failed to obtain lock.
+[07.12.13 08:18:57] INFO: Checking definition from AppConfig.xml against existing EAC provisioning.
+[07.12.13 08:18:58] INFO: Definition has not changed.
+[07.12.13 08:18:58] INFO: Applying index to dgraphs in restart group 'A'.
+[07.12.13 08:18:58] INFO: [MDEXHost1] Starting shell utility 'mkpath_dgraph-input-new'.
+[07.12.13 08:19:01] INFO: [MDEXHost1] Starting copy utility 'copy_index_to_temp_new_dgraph_input_dir_for_Dgraph1'.
+[07.12.13 08:19:47] INFO: [MDEXHost1] Starting shell utility 'move_dgraph-input_to_dgraph-input-old'.
+[07.12.13 08:19:48] INFO: [MDEXHost1] Starting shell utility 'move_dgraph-input-new_to_dgraph-input'.
+[07.12.13 08:19:50] INFO: [MDEXHost1] Starting backup utility 'backup_log_dir_for_component_Dgraph1'.
+[07.12.13 08:19:51] INFO: [MDEXHost1] Starting component 'Dgraph1'.
+[07.12.13 08:20:00] INFO: [MDEXHost1] Starting shell utility 'rmdir_dgraph-input-old'.
+[12/07/2013  8:18:00.78] Extracting files for forge for Cluster 2 
+[12/07/2013  8:18:00.78] Call Scripts for Local language for cluster 2 - Baseline Update 
+Setting flag 'baseline_data_ready' in the EAC.
+[07.12.13 08:21:32] INFO: Checking definition from AppConfig.xml against existing EAC provisioning.
+[07.12.13 08:21:33] INFO: Definition has not changed.
+[07.12.13 08:21:33] INFO: Starting baseline update script.
+[07.12.13 08:21:33] WARNING: Failed to obtain lock.
+[07.12.13 08:21:34] INFO: Checking definition from AppConfig.xml against existing EAC provisioning.
+[07.12.13 08:21:35] INFO: Definition has not changed.
+[07.12.13 08:21:35] INFO: Applying index to dgraphs in restart group 'A'.
+[07.12.13 08:21:35] INFO: [MDEXHost2] Starting shell utility 'mkpath_dgraph-input-new'.
+[07.12.13 08:21:39] INFO: [MDEXHost2] Starting copy utility 'copy_index_to_temp_new_dgraph_input_dir_for_Dgraph2'.
+[07.12.13 08:22:23] INFO: Stopping component 'Dgraph2'.
+[07.12.13 08:22:24] INFO: [MDEXHost2] Starting shell utility 'move_dgraph-input_to_dgraph-input-old'.
+[07.12.13 08:22:26] INFO: [MDEXHost2] Starting shell utility 'move_dgraph-input-new_to_dgraph-input'.
+[07.12.13 08:22:27] INFO: [MDEXHost2] Starting backup utility 'backup_log_dir_for_component_Dgraph2'.
+[07.12.13 08:22:29] INFO: [MDEXHost2] Starting component 'Dgraph2'.
+[07.12.13 08:22:38] INFO: [MDEXHost2] Starting shell utility 'rmdir_dgraph-input-old'.
+[12/07/2013  8:18:00.78] Call Scripts for English language for cluster 1 - Baseline Update  
+Setting flag 'baseline_data_ready' in the EAC.
+[07.12.13 08:22:43] INFO: Checking definition from AppConfig.xml against existing EAC provisioning.
+[07.12.13 08:22:43] INFO: Updating provisioning for host 'webstudio'.
+[07.12.13 08:22:43] INFO: Updating definition for host 'webstudio'.
+[07.12.13 08:22:44] INFO: Updating provisioning for component 'Dgraph1'.
+[07.12.13 08:22:44] INFO: Updating definition for component 'Dgraph1'.
+[07.12.13 08:22:45] INFO: Updating provisioning for component 'Dgraph2'.
+[07.12.13 08:22:45] INFO: Stopping component 'Dgraph2'.
+[07.12.13 08:22:47] INFO: Updating definition for component 'Dgraph2'.
+[07.12.13 08:22:48] INFO: [MDEXHost2] Starting component 'Dgraph2'.
+[07.12.13 08:22:58] INFO: Updating definition for script 'BaselineGenerate'.
+[07.12.13 08:22:58] INFO: Updating definition for script 'PartialUpdate'.
+[07.12.13 08:22:58] INFO: Updating definition for script 'ConfigUpdate'.
+[07.12.13 08:22:59] INFO: Updating definition for custom component 'ConfigManager'.
+[07.12.13 08:22:59] INFO: Updating provisioning for host 'ITLHost'.
+[07.12.13 08:22:59] INFO: Updating definition for host 'ITLHost'.
+[07.12.13 08:22:59] INFO: [ITLHost] Starting shell utility 'mkpath_-logs'.
+[07.12.13 08:23:01] INFO: [ITLHost] Starting shell utility 'mkpath_-'.
+[07.12.13 08:23:03] INFO: Updating provisioning for component 'ConfigurationGeneratorForge'.
+[07.12.13 08:23:03] INFO: Updating definition for component 'ConfigurationGeneratorForge'.
+[07.12.13 08:23:03] INFO: Updating provisioning for component 'PartialConfigurationGeneratorForge'.
+[07.12.13 08:23:03] INFO: Updating definition for component 'PartialConfigurationGeneratorForge'.
+[07.12.13 08:23:03] INFO: Updating provisioning for component 'Forge'.
+[07.12.13 08:23:03] INFO: Updating definition for component 'Forge'.
+[07.12.13 08:23:04] INFO: Updating provisioning for component 'PartialForge'.
+[07.12.13 08:23:04] INFO: Updating definition for component 'PartialForge'.
+[07.12.13 08:23:04] INFO: Updating provisioning for component 'Dgidx'.
+[07.12.13 08:23:04] INFO: Updating definition for component 'Dgidx'.
+[07.12.13 08:23:05] INFO: Updating provisioning for component 'LogServer'.
+[07.12.13 08:23:05] INFO: Stopping component 'LogServer'.
+[07.12.13 08:23:06] INFO: Updating definition for component 'LogServer'.
+[07.12.13 08:23:06] INFO: [LogHost] Starting component 'LogServer'.
+[07.12.13 08:23:07] INFO: Updating definition for script 'DailyReports'.
+[07.12.13 08:23:07] INFO: Updating definition for script 'WeeklyReports'.
+[07.12.13 08:23:08] INFO: Updating definition for script 'DailyHtmlReports'.
+[07.12.13 08:23:08] INFO: Updating definition for script 'WeeklyHtmlReports'.
+[07.12.13 08:23:09] INFO: Updating provisioning for component 'WeeklyReportGenerator'.
+[07.12.13 08:23:09] INFO: Updating definition for component 'WeeklyReportGenerator'.
+[07.12.13 08:23:09] INFO: Updating provisioning for component 'DailyReportGenerator'.
+[07.12.13 08:23:09] INFO: Updating definition for component 'DailyReportGenerator'.
+[07.12.13 08:23:09] INFO: Updating provisioning for component 'WeeklyHtmlReportGenerator'.
+[07.12.13 08:23:09] INFO: Updating definition for component 'WeeklyHtmlReportGenerator'.
+[07.12.13 08:23:09] INFO: Updating provisioning for component 'DailyHtmlReportGenerator'.
+[07.12.13 08:23:09] INFO: Updating definition for component 'DailyHtmlReportGenerator'.
+[07.12.13 08:23:10] INFO: Definition updated.
+[07.12.13 08:23:10] INFO: Starting baseline update script.
+[07.12.13 08:23:10] WARNING: Failed to obtain lock.
+[07.12.13 08:23:11] INFO: Checking definition from AppConfig.xml against existing EAC provisioning.
+[07.12.13 08:23:15] INFO: Definition has not changed.
+[07.12.13 08:23:15] INFO: Applying index to dgraphs in restart group 'A'.
+[07.12.13 08:23:15] INFO: [MDEXHost1] Starting shell utility 'mkpath_dgraph-input-new'.
+[07.12.13 08:23:17] INFO: [MDEXHost1] Starting copy utility 'copy_index_to_temp_new_dgraph_input_dir_for_Dgraph1'.
+[07.12.13 08:23:47] INFO: [MDEXHost1] Starting shell utility 'move_dgraph-input_to_dgraph-input-old'.
+[07.12.13 08:23:49] INFO: [MDEXHost1] Starting shell utility 'move_dgraph-input-new_to_dgraph-input'.
+[07.12.13 08:23:50] INFO: [MDEXHost1] Starting backup utility 'backup_log_dir_for_component_Dgraph1'.
+[07.12.13 08:23:52] INFO: [MDEXHost1] Starting component 'Dgraph1'.
+[07.12.13 08:24:01] INFO: [MDEXHost1] Starting shell utility 'rmdir_dgraph-input-old'.
+[12/07/2013  8:18:00.78] Call Scripts for English language for cluster 2 - Baseline Update 
+Setting flag 'baseline_data_ready' in the EAC.
+[07.12.13 08:24:06] INFO: Checking definition from AppConfig.xml against existing EAC provisioning.
+[07.12.13 08:24:07] INFO: Definition has not changed.
+[07.12.13 08:24:07] INFO: Starting baseline update script.
+[07.12.13 08:24:07] WARNING: Failed to obtain lock.
+[07.12.13 08:24:08] INFO: Checking definition from AppConfig.xml against existing EAC provisioning.
+[07.12.13 08:24:09] INFO: Definition has not changed.
+[07.12.13 08:24:09] INFO: Applying index to dgraphs in restart group 'A'.
+[07.12.13 08:24:09] INFO: [MDEXHost2] Starting shell utility 'mkpath_dgraph-input-new'.
+[07.12.13 08:24:11] INFO: [MDEXHost2] Starting copy utility 'copy_index_to_temp_new_dgraph_input_dir_for_Dgraph2'.
+[07.12.13 08:24:54] INFO: Stopping component 'Dgraph2'.
+[07.12.13 08:24:56] INFO: [MDEXHost2] Starting shell utility 'move_dgraph-input_to_dgraph-input-old'.
+[07.12.13 08:24:58] INFO: [MDEXHost2] Starting shell utility 'move_dgraph-input-new_to_dgraph-input'.
+[07.12.13 08:24:59] INFO: [MDEXHost2] Starting backup utility 'backup_log_dir_for_component_Dgraph2'.
+[07.12.13 08:25:01] INFO: [MDEXHost2] Starting component 'Dgraph2'.
+[07.12.13 08:25:10] INFO: [MDEXHost2] Starting shell utility 'rmdir_dgraph-input-old'.
+[12/07/2013  8:18:00.78] Forge operation completed successfully  
