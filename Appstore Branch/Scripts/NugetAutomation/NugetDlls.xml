@@ -1,0 +1,101 @@
+<Packages>
+	<Package name="Tesco.Com.Core">
+		<Dll>Tesco.Com.Core.dll</Dll>
+		<Dll>Tesco.Com.ServiceModel.dll</Dll>
+		<Dll>Tesco.Com.Api.Core.dll</Dll>
+		<Dll>Tesco.Com.Unity.dll</Dll>
+		<Dll>Tesco.Com.Messaging.dll</Dll>
+		<Dll>Tesco.Com.Log4net.dll</Dll>
+		<Dll>Tesco.Com.DataAcess.dll</Dll>
+		<Dll>Tesco.Com.OmuValueInjecter.dll</Dll>
+	</Package>
+	<Package name="AppStore.Common.Library">
+		<Dll>Tesco.Com.AppStore.Core.dll</Dll>
+		<Dll>Tesco.Com.AppStore.Core.MessageTypes.dll</Dll>
+		<Dll>Tesco.Com.AppStore.Web.dll</Dll>
+		<Dll>Tesco.Com.AppStore.Unity.dll</Dll>
+		<Dll>Tesco.Com.Testing.dll</Dll>
+		<Dll>Tesco.Com.AppStore.Testing.dll</Dll>
+	</Package>
+	<Package name="WIF">
+		<Dll>Microsoft.IdentityModel.dll</Dll>
+	</Package>
+	<Package name="EntLibContrib.ExceptionHandling">
+		<Dll>Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll</Dll>
+	</Package>
+	<Package name="EntLibContrib.Logging">
+		<Dll>Microsoft.Practices.EnterpriseLibrary.Logging.dll</Dll>
+	</Package>
+	<Package name="EntLibContrib.Validation">
+		<Dll>Microsoft.Practices.EnterpriseLibrary.Validation.dll</Dll>
+	</Package>
+	<Package name="EntLibContrib.PolicyInjection">
+		<Dll>Microsoft.Practices.EnterpriseLibrary.PolicyInjection.dll</Dll>
+	</Package>
+	<Package name="EntLibContrib.ExceptionHandling.Logging">
+		<Dll>Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll</Dll>
+	</Package>
+	<Package name="EnterpriseLibrary.Security.Cryptography">
+		<Dll>Microsoft.Practices.EnterpriseLibrary.Security.Cryptography.dll</Dll>
+	</Package>
+	<Package name="EnterpriseLibrary.Data">
+		<Dll>Microsoft.Practices.EnterpriseLibrary.Data.dll</Dll>
+	</Package>
+	<Package name="EnterpriseLibrary.ExceptionHandling.WCF">
+		<Dll>Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.dll</Dll>
+	</Package>
+	<Package name="EntLibContrib.Common">
+		<Dll>Microsoft.Practices.EnterpriseLibrary.Common.dll</Dll>
+		<Dll>Microsoft.Practices.ServiceLocation.dll</Dll>
+		<Dll>Microsoft.Practices.Unity.dll</Dll>
+		<Dll>Microsoft.Practices.Unity.Configuration.dll</Dll>
+		<Dll>Microsoft.Practices.Unity.Interception.dll</Dll>
+		<Dll>Microsoft.Practices.Unity.Interception.Configuration.dll</Dll>
+	</Package>
+	<Package name="EntityFramework">
+		<Dll>EntityFramework.dll</Dll>
+	</Package>
+	<Package name="AppFabric">
+		<Dll>Microsoft.ApplicationServer.Caching.Client.dll</Dll>
+		<Dll>Microsoft.ApplicationServer.Caching.Core.dll</Dll>
+		<Dll>Microsoft.WindowsFabric.Common.dll</Dll>
+		<Dll>Microsoft.WindowsFabric.Data.Common.dll</Dll>
+		<Dll>Microsoft.WindowsFabric.Data.dll</Dll>
+	</Package>
+	<Package name="AutoMapper">
+		<Dll>AutoMapper.dll</Dll>
+	</Package>
+	<Package name="Endeca">
+		<Dll>Endeca.Logging.dll</Dll>
+		<Dll>Endeca.Navigation.AccessControl.dll</Dll>
+		<Dll>Endeca.Navigation.dll</Dll>
+	</Package>
+	<Package name="Json.NET-branch">
+		<Dll>Newtonsoft.Json.dll</Dll>
+	</Package>
+	<Package name="TIBCO_EMS">
+		<Dll>TIBCO.EMS.dll</Dll>
+	</Package>
+	<Package name="Wurfl">
+		<Dll>WURFL.dll</Dll>
+		<Dll>Wurfl.Aspnet.Extensions.dll</Dll>
+	</Package>
+	<Package name="OmuValueInjecter">
+		<Dll>Omu.ValueInjecter.dll</Dll>
+	</Package>
+	<Package name="log4net">
+		<Dll>log4net.dll</Dll>
+	</Package>
+	<Package name="SharpZipLib">
+		<Dll>ICSharpCode.SharpZipLib.dll</Dll>
+	</Package>
+	<Package name="rhino-etl">
+		<Dll>Boo.Lang.Compiler.dll</Dll>
+		<Dll>Boo.Lang.dll</Dll>
+		<Dll>Boo.Lang.Parser.dll</Dll>
+		<Dll>FileHelpers.dll</Dll>
+		<Dll>Rhino.Etl.Core.dll</Dll>
+		<Dll>Rhino.Etl.Dsl.dll</Dll>
+		<Dll>Rhino.Etl.Cmd.exe</Dll>
+	</Package>
+</Packages>

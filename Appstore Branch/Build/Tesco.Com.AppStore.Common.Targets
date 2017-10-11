@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\TeamBuild\Microsoft.TeamFoundation.Build.targets" />
+  <PropertyGroup>
+    <TfCommand>"C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\tf.exe"</TfCommand>
+    <AppStore_Core>Tesco.Com.AppStore.Core.dll</AppStore_Core>
+    <AppStore_Test>Tesco.Com.AppStore.Testing.dll</AppStore_Test>
+    <AppStore_Core_MessageTypes>Tesco.Com.AppStore.Core.MessageTypes.dll</AppStore_Core_MessageTypes>
+    <AppStore_Web>Tesco.Com.AppStore.Web.dll</AppStore_Web>
+    <AppStore_Unity>Tesco.Com.AppStore.Unity.dll</AppStore_Unity>
+  </PropertyGroup>
+  
+  <Target Name="MyTarget">
+    <!-- AppStore Common -->
+    <Exec Command="$(TfCommand) checkout /lock:none $(MSBuildProjectDirectory)\..\Lib\Tesco\$(AppStore_Core)" ContinueOnError="true" />
+    <Copy SourceFiles="$(MSBuildProjectDirectory)\..\..\..\..\..\Binaries\$(AppStore_Core)" DestinationFiles="$(MSBuildProjectDirectory)\..\Lib\Tesco\$(AppStore_Core)" ContinueOnError="true" />
+
+    <Exec Command="$(TfCommand) checkout /lock:none $(MSBuildProjectDirectory)\..\Lib\Tesco\$(AppStore_Test)" ContinueOnError="true" />
+    <Copy SourceFiles="$(MSBuildProjectDirectory)\..\..\..\..\..\Binaries\$(AppStore_Test)" DestinationFiles="$(MSBuildProjectDirectory)\..\Lib\Tesco\$(AppStore_Test)" ContinueOnError="true" />
+
+    <Exec Command="$(TfCommand) checkout /lock:none $(MSBuildProjectDirectory)\..\Lib\Tesco\$(AppStore_Core_MessageTypes)" ContinueOnError="true" />
+    <Copy SourceFiles="$(MSBuildProjectDirectory)\..\..\..\..\..\Binaries\$(AppStore_Core_MessageTypes)" DestinationFiles="$(MSBuildProjectDirectory)\..\Lib\Tesco\$(AppStore_Core_MessageTypes)" ContinueOnError="true" />
+
+    <Exec Command="$(TfCommand) checkout /lock:none $(MSBuildProjectDirectory)\..\Lib\Tesco\$(AppStore_Web)" ContinueOnError="true" />
+    <Copy SourceFiles="$(MSBuildProjectDirectory)\..\..\..\..\..\Binaries\$(AppStore_Web)" DestinationFiles="$(MSBuildProjectDirectory)\..\Lib\Tesco\$(AppStore_Web)" ContinueOnError="true" />
+
+    <Exec Command="$(TfCommand) checkout /lock:none $(MSBuildProjectDirectory)\..\Lib\Tesco\$(AppStore_Unity)" ContinueOnError="true" />
+    <Copy SourceFiles="$(MSBuildProjectDirectory)\..\..\..\..\..\Binaries\$(AppStore_Unity)" DestinationFiles="$(MSBuildProjectDirectory)\..\Lib\Tesco\$(AppStore_Unity)" ContinueOnError="true" />
+
+    <Exec Command="$(TfCommand) checkin /bypass /noprompt /override:'***TARGET_CHECKIN***' /Comment:'***NO_CI***'" ContinueOnError="true" />
+    
+  </Target>
+</Project>

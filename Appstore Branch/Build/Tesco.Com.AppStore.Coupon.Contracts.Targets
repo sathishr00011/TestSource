@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\TeamBuild\Microsoft.TeamFoundation.Build.targets" />
+  <PropertyGroup>
+    <TfCommand>"C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\tf.exe"</TfCommand>
+    <CouponContracts>Tesco.Com.AppStore.Coupon.Contracts.dll</CouponContracts>
+  </PropertyGroup>
+  
+  <Target Name="MyTarget">
+    <Exec Command="$(TfCommand) checkout /lock:none $(MSBuildProjectDirectory)\..\Lib\Tesco\$(CouponContracts)" ContinueOnError="true" />
+    <Copy SourceFiles="$(MSBuildProjectDirectory)\..\..\..\..\..\Binaries\$(CouponContracts)" DestinationFiles="$(MSBuildProjectDirectory)\..\Lib\Tesco\$(CouponContracts)" ContinueOnError="true" />
+    <Exec Command="$(TfCommand) checkin /bypass /noprompt /override:'***TARGET_CHECKIN***' /Comment:'***NO_CI***'" ContinueOnError="true" />
+
+  </Target>
+</Project>
