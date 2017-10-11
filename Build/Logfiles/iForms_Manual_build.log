@@ -1,0 +1,15 @@
+Buildfile: file:///D:/Build/iFormdefault_CCNet.build
+Target framework: Microsoft .NET Framework 2.0
+Target(s) specified: recurse 
+
+
+BUILD FAILED
+
+D:\Build\iFormdefault_CCNet.build(5,4):
+Property evaluation failed.
+Expression: ${BUILDDIRECTORY}\Sources\Ighs.ApplicationParameter\ApplicationParameter\Application\Deployments
+              ^^^^^^^^^^^^^^
+    Property 'BUILDDIRECTORY' has not been set.
+
+Total time: 0.1 seconds.
+

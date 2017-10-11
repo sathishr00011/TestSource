@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<project name="Blueprint" default="recurse">
+  <!-- default configuration -->
+  <property name="framework.dir" value="C:\WINDOWS\Microsoft.NET\Framework\v2.0.50727"/>
+  <property name="SysRoot.dir"   value="${BUILDDIRECTORY}\Sources\Ighs.ApplicationParameter\ApplicationParameter\Application\Deployments"/>
+  <property name="Distination.dir"   value="\\UKTEE01-CLUSDB\IGHSBuildOutput\IGHS_Manifest\NonRestricted"/>   
+ 
+ <target name="recurse" description="Builds recursively all subprojects"  depends="copysolutionsource" />
+
+<target name="GetTFSFilessolution" >
+  <exec program="C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\TF.exe">
+    <arg value="get" />
+    <arg value="/login:DOTCOM\jv37,Tesco2013$10" />
+    <arg value="${TFSSysRoot.dir}/TFS WorkSpace\InternationalDeployment\Deployments\R8.0\DEV\ApplicationParameters\AP" />
+<arg value="/force" />
+  </exec>
+ </target> 
+
+
+<target name="copysolutionsource">
+<copy todir="${Distination.dir}/DEV\AP\R12.0\">
+<fileset basedir="${SysRoot.dir}/R12.0\DEV\ApplicationParameters\AP">
+<include name="**.*" />
+</fileset>
+</copy>
+</target>
+</project>

@@ -1,0 +1,7 @@
+set PATH=%PATH%;D:\Software\Nant\nant-0.85\bin;
+
+nant -buildfile:Emailpublish.build -l:Logfiles/Emailpublish.log
+pause
+Exit
+
+

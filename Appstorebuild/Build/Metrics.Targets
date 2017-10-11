@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\TeamBuild\Microsoft.TeamFoundation.Build.targets" />
+  <PropertyGroup>
+    <Today>$([System.DateTime]::Now.ToString("yyyy.MM.dd"))</Today>
+    <ReportDirectory>D:\Metrics\$(Today)</ReportDirectory>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <AnalysisFiles Include="$(OutDir)\*.CodeAnalysisLog.xml" />
+  </ItemGroup>
+  
+  <Target Name="MyTarget">
+    <CallTarget Targets="CopyStatWarningFiles" />
+    <Exec Command="MetricReportGenerator.exe /L:$(OutDir) /F:$(LastBuild) /N:$(BuildName) $(Assemblies)" WorkingDirectory="C:\Program Files (x86)\Tesco.Com.MetricsTool\"/>
+    <CallTarget Condition="$(DependantBuild) != ''" Targets="RunDependantBuild" />
+  </Target>
+  
+  <Target  Name="RunDependantBuild">
+    <Exec Command="tfsbuild.exe start /server:http://tfsapp.dotcom.tesco.org/tfs/grocery /buildDefinition:TescoAppStore\$(DependantBuild) /queue"
+      WorkingDirectory="C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\" />
+  </Target>
+
+  <Target Name="CopyStatWarningFiles">
+    <MakeDir Directories="$(ReportDirectory)" />
+    <Copy SourceFiles="@(AnalysisFiles)" DestinationFolder="$(ReportDirectory)"/>
+  </Target>
+</Project>
