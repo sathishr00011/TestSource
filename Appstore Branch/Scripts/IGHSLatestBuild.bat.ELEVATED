@@ -1,1 +1,0 @@
-PowerShell -noexit -Command (New-Object -com 'Shell.Application').ShellExecute('Cmd.exe', '/C D:\TescoAppStore\Cell46Main\Tesco\Scripts\IGHSLatestBuild.bat ', '', 'runas') 

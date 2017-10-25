@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<ReleaseManifest ReleaseVersion="manifest_version" Region="UK">
-  <Product Name="MobileWebsite" InstallType="Install">
-    <Package Name="MobileWebsite" InstallType="Install" Version="number" Path="\\UKTEE01-CLUSDB\IGHSBuildOutput\IGHS_Mobile\RTC4.0\number\workspace_number.zip" />
-  </Product>
-</ReleaseManifest>

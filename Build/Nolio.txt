@@ -1,1 +1,0 @@
-asap.cmd -u nh97 -p passwordone -a "InternationalGrocery" -e "UK DEV66AP" -f "R8.0 IGHS Backoffice Website Deployment" -s  {ukdev66intap01,uktas01nolap01v} -r "{Application Parameters/Release Version,8.0.0.195}" -n

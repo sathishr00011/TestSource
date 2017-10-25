@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ReleaseManifest type="component" region="UK">
-  
-  <Product Name="UIAssets" InstallType="Install" >
-    <Package Name="Tesco.Com.Web.UIAssets" InstallType="Install" />
-  </Product>
-  
-</ReleaseManifest>

@@ -1,5 +1,0 @@
-c:\users\jv37\documents\visual studio 2010\Projects\Servicetestresult\Servicetestresult\bin\Servicetestresult.dll
-c:\users\jv37\documents\visual studio 2010\Projects\Servicetestresult\Servicetestresult\bin\Servicetestresult.pdb
-c:\users\jv37\documents\visual studio 2010\Projects\Servicetestresult\Servicetestresult\obj\Debug\ResolveAssemblyReference.cache
-c:\users\jv37\documents\visual studio 2010\Projects\Servicetestresult\Servicetestresult\obj\Debug\Servicetestresult.dll
-c:\users\jv37\documents\visual studio 2010\Projects\Servicetestresult\Servicetestresult\obj\Debug\Servicetestresult.pdb

@@ -1,1 +1,0 @@
-C:\ToolsforUnitTest\ReportGenerator.2.1.5.0\ReportGenerator.exe -reports:"D:\Buildoutput\Online_UI\TestResults\converted.coveragexml" -targetdir:"D:\Buildoutput\Online_UI\TestResults\coverage"

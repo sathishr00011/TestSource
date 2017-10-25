@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ReleaseManifest type="component" region="UK">
-    <Product Name="ProductListProvider" InstallType="Install" >
-       <Package Name="ProductListProvider" InstallType="Install" />          
-       </Product>	
-</ReleaseManifest>

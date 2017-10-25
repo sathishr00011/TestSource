@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<ReleaseManifest ReleaseVersion="" Region="UK">
-  <Product Name="MobileDispatcher" InstallType="Install" >
-    <Package Name="AppStore.DeviceFamilyRewriteProvider" InstallType="Install" />
-    <Package Name="Tesco.Com.Web.UI.Dispatcher" InstallType="Install" />
-  </Product>
-</ReleaseManifest>

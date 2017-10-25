@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ReleaseManifest type="component" region="UK">  
-    <Product Name="OrderReprocessor" InstallType="Install" >
-        <Service Name="OrderReprocessor" TargetServerType="AppStoreAppServer" AppType="CONSOLEAPP" InstallType="Install" artifactIdentifier="AppStore.Order.Reprocessor">
-          <Package Name="Tesco.Com.Appstore.OrderReProcessor" InstallType="Install" />
-        </Service>
-    </Product>    
-</ReleaseManifest>

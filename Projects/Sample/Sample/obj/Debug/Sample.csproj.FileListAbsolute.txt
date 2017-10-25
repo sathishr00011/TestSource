@@ -1,5 +1,0 @@
-c:\users\jv37\documents\visual studio 2010\Projects\Sample\Sample\bin\Debug\Sample.dll
-c:\users\jv37\documents\visual studio 2010\Projects\Sample\Sample\bin\Debug\Sample.pdb
-c:\users\jv37\documents\visual studio 2010\Projects\Sample\Sample\obj\Debug\ResolveAssemblyReference.cache
-c:\users\jv37\documents\visual studio 2010\Projects\Sample\Sample\obj\Debug\Sample.dll
-c:\users\jv37\documents\visual studio 2010\Projects\Sample\Sample\obj\Debug\Sample.pdb

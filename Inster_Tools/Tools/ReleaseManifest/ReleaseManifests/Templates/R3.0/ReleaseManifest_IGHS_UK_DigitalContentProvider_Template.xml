@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ReleaseManifest type="component" region="UK">
-    <Product Name="DigitalContentProvider" InstallType="Install" >
-       <Package Name="DigitalContentProvider" InstallType="Install" />          
-       </Product>	
-</ReleaseManifest>

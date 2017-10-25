@@ -1,6 +1,0 @@
-D:\MSBuildTask\CodeCoverageReport\SummaryReport\SummaryReport\SummaryReport\bin\Debug\SummaryReport.exe
-D:\MSBuildTask\CodeCoverageReport\SummaryReport\SummaryReport\SummaryReport\bin\Debug\SummaryReport.pdb
-D:\MSBuildTask\CodeCoverageReport\SummaryReport\SummaryReport\SummaryReport\bin\Debug\Microsoft.VisualStudio.Coverage.Analysis.dll
-D:\MSBuildTask\CodeCoverageReport\SummaryReport\SummaryReport\SummaryReport\obj\x86\Debug\SummaryReport.exe
-D:\MSBuildTask\CodeCoverageReport\SummaryReport\SummaryReport\SummaryReport\obj\x86\Debug\SummaryReport.pdb
-D:\MSBuildTask\CodeCoverageReport\SummaryReport\SummaryReport\SummaryReport\bin\Debug\SummaryApp.config
